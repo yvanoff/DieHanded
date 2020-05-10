@@ -1,0 +1,20 @@
+{
+  "settings": [
+    {
+      "bc": "0",
+      "challenge_biomes": "False",
+      "rotg": "True",
+      "bad_seeds": "True",
+      "lang": "en",
+      "temporal": "False",
+      "starter_weapons": "False",
+      "colorless": "False",
+      "vine_rune": "True",
+      "tp_rune": "True",
+      "ram_rune": "True",
+      "spider_rune": "True",
+      "build_restrictions": "True",
+      "draw_gear_first":  "True"
+    }
+  ]
+}

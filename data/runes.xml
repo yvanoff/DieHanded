@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<runes_list>
+	<rune>
+		<internal_name>vine</internal_name>
+		<lang_en>Vine Rune</lang_en>
+		<lang_fr>Rune des vignes</lang_fr>
+	</rune>
+	<rune>
+		<internal_name>tp</internal_name>
+		<lang_en>Teleportation Rune</lang_en>
+		<lang_fr>Rune de téléportation</lang_fr>
+	</rune>
+	<rune>
+		<internal_name>ram</internal_name>
+		<lang_en>Ram Rune</lang_en>
+		<lang_fr>Rune du Bélier</lang_fr>
+	</rune>
+	<rune>
+		<internal_name>spider</internal_name>
+		<lang_en>Spider Rune</lang_en>
+		<lang_fr>Rune de l'Araignée</lang_fr>
+	</rune>
+</runes_list>

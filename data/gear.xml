@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gear_list>
+	<gear>
+		<internal_name>crossbo</internal_name>
+		<lang_en>Double Crossb-o-matic</lang_en>
+		<lang_fr>Auto-balète double</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>sinew</internal_name>
+		<lang_en>Sinew Slicer</lang_en>
+		<lang_fr>Tranche-ligaments</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>heavyT</internal_name>
+		<lang_en>Heavy Turret</lang_en>
+		<lang_fr>Tourelle lourde</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>barnacle</internal_name>
+		<lang_en>Barnacle</lang_en>
+		<lang_fr>Bernacle</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>flameT</internal_name>
+		<lang_en>Flamethrower Turret</lang_en>
+		<lang_fr>Tourelle lance-flammes</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>cleaver</internal_name>
+		<lang_en>Cleaver</lang_en>
+		<lang_fr>Hachoir</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>wolfT</internal_name>
+		<lang_en>Wolf Trap</lang_en>
+		<lang_fr>Piège à loups</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>crusher</internal_name>
+		<lang_en>Crusher</lang_en>
+		<lang_fr>Ecraseur</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>decoy</internal_name>
+		<lang_en>Explosive Decoy</lang_en>
+		<lang_fr>Leurre explosif</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>eDoor</internal_name>
+		<lang_en>Emergency Door</lang_en>
+		<lang_fr>Porte Hâtive</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>opNade</internal_name>
+		<lang_en>Powerful Grenade</lang_en>
+		<lang_fr>Grenade Puissante</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>infNade</internal_name>
+		<lang_en>Infantry Grenade</lang_en>
+		<lang_fr>Grenade d'infanterie</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>clusNade</internal_name>
+		<lang_en>Cluster Grenade</lang_en>
+		<lang_fr>Grappe explosive</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>magNade</internal_name>
+		<lang_en>Magnetic Grenade</lang_en>
+		<lang_fr>Grenade magnétique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>stunNade</internal_name>
+		<lang_en>Stun Grenade</lang_en>
+		<lang_fr>Grenade étourdissante</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>iceNade</internal_name>
+		<lang_en>Ice Grenade</lang_en>
+		<lang_fr>Bombe givrante</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>fireNade</internal_name>
+		<lang_en>Fire Grenade</lang_en>
+		<lang_fr>Bombe incendiaire</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>rootNade</internal_name>
+		<lang_en>Root Grenade</lang_en>
+		<lang_fr>Bombe de lière</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>oilNade</internal_name>
+		<lang_en>Oil Grenade</lang_en>
+		<lang_fr>Bombe à huile</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>swarm</internal_name>
+		<lang_en>Swarm</lang_en>
+		<lang_fr>Nuée</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>deathOrb</internal_name>
+		<lang_en>Death Orb</lang_en>
+		<lang_fr>Orbe de mort</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>tornado</internal_name>
+		<lang_en>Tornado</lang_en>
+		<lang_fr>Tornade</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>kDance</internal_name>
+		<lang_en>Knife Dance</lang_en>
+		<lang_fr>Danse des couteaux</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>politics</internal_name>
+		<lang_en>Corrupted Power</lang_en>
+		<lang_fr>Puissance corrompue</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>vampirism</internal_name>
+		<lang_en>Vampirism</lang_en>
+		<lang_fr>Vampirisme</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>tonic</internal_name>
+		<lang_en>Tonic</lang_en>
+		<lang_fr>Tonique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>hook</internal_name>
+		<lang_en>Grappling Hook</lang_en>
+		<lang_fr>Grappin</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>phaser</internal_name>
+		<lang_en>Phaser</lang_en>
+		<lang_fr>Déphasage</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>temp</internal_name>
+		<lang_en>Temporal Distortion</lang_en>
+		<lang_fr>Distorsion temporelle</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>fart</internal_name>
+		<lang_en>Corrosive Cloud</lang_en>
+		<lang_fr>Nuage corrosif</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>lacAura</internal_name>
+		<lang_en>Lacerating Aura</lang_en>
+		<lang_fr>Aura de lacération</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>wod</internal_name>
+		<lang_en>Wave of Denial</lang_en>
+		<lang_fr>Onde de déni</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>wings</internal_name>
+		<lang_en>Wings of the Crow</lang_en>
+		<lang_fr>Ailes de Corbeau</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>youkool</internal_name>
+		<lang_en>Great Owl of War</lang_en>
+		<lang_fr>Grand-duc de combat</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>speedrun</internal_name>
+		<lang_en>Lightspeed</lang_en>
+		<lang_fr>Assault</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>whistle</internal_name>
+		<lang_en>Giant Whistle</lang_en>
+		<lang_fr>Sifflet du géant</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>telluric</internal_name>
+		<lang_en>Telluric Shock</lang_en>
+		<lang_fr>Impact Tellurique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>beyblade</internal_name>
+		<lang_en>Collector's Syringe</lang_en>
+		<lang_fr>Seringue du Collecteur</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>smoke</internal_name>
+		<lang_en>Smoke Bomb</lang_en>
+		<lang_fr>Fumigène</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>mushBoi</internal_name>
+		<lang_en>Mushroom boi!</lang_en>
+		<lang_fr>Champignon protecteur</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>iceArm</internal_name>
+		<lang_en>Ice Armor</lang_en>
+		<lang_fr>Armure de glace</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>rusty</internal_name>
+		<lang_en>Rusty Sword</lang_en>
+		<lang_fr>Epée rouillée</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>balanced</internal_name>
+		<lang_en>Balanced Blade</lang_en>
+		<lang_fr>Epée équilibrée</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>spiteS</internal_name>
+		<lang_en>Spite Sword</lang_en>
+		<lang_fr>Désespoir</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>assDag</internal_name>
+		<lang_en>Assassin's Dagger</lang_en>
+		<lang_fr>Dague d'assassin</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>bloodS</internal_name>
+		<lang_en>Blood Sword</lang_en>
+		<lang_fr>Bain de sang</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>twins</internal_name>
+		<lang_en>Twin Daggers</lang_en>
+		<lang_fr>Dagues jumelles</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>broadS</internal_name>
+		<lang_en>Broadsword</lang_en>
+		<lang_fr>Epée large</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>shovel</internal_name>
+		<lang_en>Shovel</lang_en>
+		<lang_fr>Pelle</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>cursed</internal_name>
+		<lang_en>Cursed Sword</lang_en>
+		<lang_fr>Epée maudite</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>stiletto</internal_name>
+		<lang_en>Sadist's Stiletto</lang_en>
+		<lang_fr>Dague de culte sadiste</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>swift</internal_name>
+		<lang_en>Swift Sword</lang_en>
+		<lang_fr>Epée de promptitude</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>giantK</internal_name>
+		<lang_en>Giantkiller</lang_en>
+		<lang_fr>Tueuse de géants</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>shrapnel</internal_name>
+		<lang_en>Shrapnel Axes</lang_en>
+		<lang_fr>Lame à fragmentation</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>seismic</internal_name>
+		<lang_en>Seismic Strike</lang_en>
+		<lang_fr>Frappe sismique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>wSpear</internal_name>
+		<lang_en>War Spear</lang_en>
+		<lang_fr>Lance de guerre</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>imp</internal_name>
+		<lang_en>Impaler</lang_en>
+		<lang_fr>Empaleuse</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>symLance</internal_name>
+		<lang_en>Symmetrical Lance</lang_en>
+		<lang_fr>Lance symétrique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>rapier</internal_name>
+		<lang_en>Rapier</lang_en>
+		<lang_fr>Rapière</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>skewer</internal_name>
+		<lang_en>Meat Skewer</lang_en>
+		<lang_fr>Perce-carne</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>nut</internal_name>
+		<lang_en>Nutcracker</lang_en>
+		<lang_fr>Casse noisettes</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>spartan</internal_name>
+		<lang_en>Spartan Sandals</lang_en>
+		<lang_fr>Sandales de spartiate</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>spikedB</internal_name>
+		<lang_en>Spiked Boots</lang_en>
+		<lang_fr>Bottes cloutées</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>hayaB</internal_name>
+		<lang_en>Hayabusa Boots</lang_en>
+		<lang_fr>Bottes de Hayabusa</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>hayaG</internal_name>
+		<lang_en>Hayabusa Gauntlets</lang_en>
+		<lang_fr>Gantelets de Hayabusa</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>valmont</internal_name>
+		<lang_en>Valmont's Whip</lang_en>
+		<lang_fr>Fouet de Valmont</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>wrenching</internal_name>
+		<lang_en>Wrenching Whip</lang_en>
+		<lang_fr>Fouet d'entrave</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>oiled</internal_name>
+		<lang_en>Oiled Sword</lang_en>
+		<lang_fr>Epée huileuse</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>torch</internal_name>
+		<lang_en>Torch</lang_en>
+		<lang_fr>Torche</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>frantic</internal_name>
+		<lang_en>Frantic Sword</lang_en>
+		<lang_fr>Charognarde</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>flawless</internal_name>
+		<lang_en>Flawless</lang_en>
+		<lang_fr>Perfection</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>flint</internal_name>
+		<lang_en>Flint</lang_en>
+		<lang_fr>Silex</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>tentacle</internal_name>
+		<lang_en>Tentacle</lang_en>
+		<lang_fr>Bras tentacule</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>pan</internal_name>
+		<lang_en>Vorpan</lang_en>
+		<lang_fr>Vorpoêle</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>fans</internal_name>
+		<lang_en>Flashing Fans</lang_en>
+		<lang_fr>Eventails</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>claws</internal_name>
+		<lang_en>Scythe Claws</lang_en>
+		<lang_fr>Faux-griffes</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>rnb</internal_name>
+		<lang_en>Rhythm n'Bouzouki</lang_en>
+		<lang_fr>Oud</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>crowbar</internal_name>
+		<lang_en>Crowbar</lang_en>
+		<lang_fr>Pied-de-biche</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>begBow</internal_name>
+		<lang_en>Beginner's Bow</lang_en>
+		<lang_fr>Arc du fils de geolier</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>nocksB</internal_name>
+		<lang_en>Multiple-nocks Bow</lang_en>
+		<lang_fr>Arc à multiples encoches</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>legolas</internal_name>
+		<lang_en>Bow and Endless Quiver</lang_en>
+		<lang_fr>Arc et carquois sans fond</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>marksman</internal_name>
+		<lang_en>Marksman's Bow</lang_en>
+		<lang_fr>Arc de tireur d'élite</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>sonic</internal_name>
+		<lang_en>Sonic Crossbow</lang_en>
+		<lang_fr>Carabine sonique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>infB</internal_name>
+		<lang_en>Infantry Bow</lang_en>
+		<lang_fr>Arc de fantassin</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>opBow</internal_name>
+		<lang_en>QuickBow</lang_en>
+		<lang_fr>Arc rapide</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>iceBow</internal_name>
+		<lang_en>Ice Bow</lang_en>
+		<lang_fr>Arc de glace</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>heavyX</internal_name>
+		<lang_en>Heavy Crossbow</lang_en>
+		<lang_fr>Arbalète lourde</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>repeater</internal_name>
+		<lang_en>Repeater Crossbow</lang_en>
+		<lang_fr>Arbalète à répétition</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>iceX</internal_name>
+		<lang_en>Ice Crossbow</lang_en>
+		<lang_fr>Arbalète de glace</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>exploX</internal_name>
+		<lang_en>Explosive Crossbow</lang_en>
+		<lang_fr>Arbalète explosive</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>carbine</internal_name>
+		<lang_en>Alchemic Carbine</lang_en>
+		<lang_fr>Pistolet alchimique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>boomer</internal_name>
+		<lang_en>Boomerang</lang_en>
+		<lang_fr>Boomerang</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>hemo</internal_name>
+		<lang_en>Hemorrhage</lang_en>
+		<lang_fr>Ventrèche</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>boyAxe</internal_name>
+		<lang_en>The Boy's Axe</lang_en>
+		<lang_fr>Hache de Boï</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>javelin</internal_name>
+		<lang_en>War Javelin</lang_en>
+		<lang_fr>Javelot de guerre</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>hokuto</internal_name>
+		<lang_en>Hokuto's Bow</lang_en>
+		<lang_fr>Arc du Hokuto</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>nos</internal_name>
+		<lang_en>Nerves of Steel</lang_en>
+		<lang_fr>Nerfs d'acier</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>throwK</internal_name>
+		<lang_en>Throwing Knife</lang_en>
+		<lang_fr>Couteau de lancer</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>eWhip</internal_name>
+		<lang_en>Electric Whip</lang_en>
+		<lang_fr>Fouet électrique</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>firebrands</internal_name>
+		<lang_en>Firebrands</lang_en>
+		<lang_fr>Torches de lancer</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>shards</internal_name>
+		<lang_en>Ice Shards</lang_en>
+		<lang_fr>Eclats de glace</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>pyro</internal_name>
+		<lang_en>Pyrotechnics</lang_en>
+		<lang_fr>Pyrotechnie</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>palpatine</internal_name>
+		<lang_en>Lightning Bolt</lang_en>
+		<lang_fr>Eclair</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>fireB</internal_name>
+		<lang_en>Fire blast</lang_en>
+		<lang_fr>Lance-flammes</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>frostB</internal_name>
+		<lang_en>Frost Blast</lang_en>
+		<lang_fr>Congélation</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>missiles</internal_name>
+		<lang_en>Magic missiles</lang_en>
+		<lang_fr>Missiles magiques</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>blowgun</internal_name>
+		<lang_en>Blowgun</lang_en>
+		<lang_fr>Sarbacane</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>planks</internal_name>
+		<lang_en>Old Wooden Shield</lang_en>
+		<lang_fr>Vieux bouclier en bois</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>frontline</internal_name>
+		<lang_en>Front Line Shield</lang_en>
+		<lang_fr>Bouclier de premoière ligne</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>cudgel</internal_name>
+		<lang_en>Cudgel</lang_en>
+		<lang_fr>Assomoir</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>punishment</internal_name>
+		<lang_en>Punishment</lang_en>
+		<lang_fr>Punition</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>yeeter</internal_name>
+		<lang_en>Knockback Shield</lang_en>
+		<lang_fr>Bouclier de dégagement</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>opShield</internal_name>
+		<lang_en>Rampart</lang_en>
+		<lang_fr>Rempart</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>assShield</internal_name>
+		<lang_en>Assault Shield</lang_en>
+		<lang_fr>Bouclier d'assaut</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>hirstyS</internal_name>
+		<lang_en>Bloodthirsty Shield</lang_en>
+		<lang_fr>Bouclier sanguinaire</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>greed</internal_name>
+		<lang_en>Greed Shield</lang_en>
+		<lang_fr>Bouclier de cupidité</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>spikedS</internal_name>
+		<lang_en>Spiked Shield</lang_en>
+		<lang_fr>Bouclier à pointes</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>buckler</internal_name>
+		<lang_en>Parry Shield</lang_en>
+		<lang_fr>BOuclier de contre</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>forceS</internal_name>
+		<lang_en>Force Shield</lang_en>
+		<lang_fr>Bubulle</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>thunder</internal_name>
+		<lang_en>Thunder Shield</lang_en>
+		<lang_fr>BOuclier foudroyant</lang_fr>
+	</gear>
+	<gear>
+		<internal_name>iceShield</internal_name>
+		<lang_en>Ice Shield</lang_en>
+		<lang_fr>Bouclier glaçant</lang_fr>
+	</gear>
+</gear_list>
