@@ -31,14 +31,6 @@ public:
 private:
     Biome* exit;
     std::string exit_name;
-    int min_bc;
-    bool vine;
-    bool tp;
-    bool ram;
-    bool spider;
-    bool is_challenge_biome;
-    bool rotg;
-    bool bad_seeds;
 };
 
 // A biome has an internal name, a displayed name (that's basicData) and a list of exits (vector of Transition, the number of Transitions ranges from 0 to 4 depending on the biome)

@@ -1,22 +1,22 @@
 {
-  "settings": [
-    {
-      "bc": "0",
-      "challenge_biomes": "False",
-      "rotg": "True",
-      "bad_seeds": "True",
-      "lang": "en",
-      "temporal": "False",
-      "starter_weapons": "False",
-      "colorless": "False",
-      "vine_rune": "True",
-      "tp_rune": "True",
-      "ram_rune": "True",
-      "spider_rune": "True",
-      "build_restrictions": "True",
-      "draw_gear_first": "True",
-      "benchmarking_mode": "False",
-      "nb_tests_benchmark":  "1000"
-    }
-  ]
+  "settings": {
+    "bc": 5,
+    "challenge_biomes": "True",
+    "rotg": true,
+    "bad_seeds": true,
+    "lang": "en",
+    "temporal": false,
+    "starter_weapons": false,
+    "colorless": false,
+    "vine_rune": true,
+    "tp_rune": true,
+    "ram_rune": true,
+    "spider_rune": true,
+    "build_restrictions": true,
+    "draw_gear_first": true,
+    "nb_max_muts": 3,
+    "benchmarking_mode": true,
+    "nb_tests_benchmark": 1000,
+    "output_file": "results.txt"
+  }
 }

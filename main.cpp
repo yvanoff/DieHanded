@@ -9,6 +9,7 @@
 #include <random>
 #include <vector>
 #include <cmath>
+#include<fstream>
 #include "pugixml.hpp"
 #include "json.hpp"
 #include "basicData.h"
@@ -113,7 +114,46 @@ std::unordered_map<std::string, Biome> setup_connections(std::unordered_map<std:
 }
 
 
-std::vector<Biome> run_main(int bc_lvl, bool has_vine, bool has_tp, bool has_ram, bool has_spider, bool has_rotg, bool has_bad_seeds,
+std::string stat_generator(std::string lang)
+{
+    // Initiating the RNG
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::default_random_engine generator;
+    int nb_stats(0), chosen_stat(0);
+    // Loading the stats and setting the variables to pick one at random
+    std::vector<basicData> stat_vector;
+
+    stat_vector = loadXML_basic("data/stats.xml", "stat", lang);
+    nb_stats = stat_vector.size();
+
+    // Generating random diet and stat
+    std::uniform_int_distribution<std::mt19937::result_type> rngStats(1, nb_stats);
+    chosen_stat = rngStats(rng) - 1;
+
+    return stat_vector[chosen_stat].getDisplayName();
+}
+
+std::string diet_generator(std::string lang)
+{
+    // Initiating the RNG
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::default_random_engine generator;
+    int  nb_diets(0), chosen_diet(0);
+    // Loading the diets and setting the variables to pick one at random
+    std::vector<basicData> diet_vector;
+
+    diet_vector = loadXML_basic("data/diets.xml", "diet", lang);
+    nb_diets = diet_vector.size();
+
+    // Generating random diet and stat
+    std::uniform_int_distribution<std::mt19937::result_type> rngDiets(1, nb_diets);
+    chosen_diet = rngDiets(rng) - 1;
+    return diet_vector[chosen_diet].getDisplayName();
+}
+
+std::vector<Biome> biome_generator(int bc_lvl, bool has_vine, bool has_tp, bool has_ram, bool has_spider, bool has_rotg, bool has_bad_seeds,
     std::string lang, std::string challenge_biomes_enabled, bool benchmarking_mode) {
 
     // Starter biome is hardcoded because it's not supposed to change
@@ -131,35 +171,14 @@ std::vector<Biome> run_main(int bc_lvl, bool has_vine, bool has_tp, bool has_ram
     std::random_device dev;
     std::mt19937 rng(dev());
     std::default_random_engine generator;
-    int nb_stats (0), nb_diets (0), chosen_diet (0), chosen_stat(0), chosen_biome(0);
-
-
-    // Loading the diets and setting the variables to pick one at random
-    std::vector<basicData> diet_vector;
-
-    diet_vector = loadXML_basic("data/diets.xml", "diet", "lang_en");
-    nb_diets = diet_vector.size();
-
-
-    // Idem for stats
-    std::vector<basicData> stat_vector;
-
-    stat_vector = loadXML_basic("data/stats.xml", "stat", "lang_en");
-    nb_stats = stat_vector.size();
+    int chosen_biome(0);
 
 
     // Loading the Biome list
     std::unordered_map<std::string, Biome> biomes_collection;
 
-    biomes_collection = loadXML_biomes("lang_en", bc_lvl, has_vine, has_tp, has_ram, has_spider, challenge_biomes_enabled, has_rotg, has_bad_seeds);
+    biomes_collection = loadXML_biomes(lang, bc_lvl, has_vine, has_tp, has_ram, has_spider, challenge_biomes_enabled, has_rotg, has_bad_seeds);
     biomes_collection = setup_connections(biomes_collection);
-
-
-    // Generating random diet and stat
-    std::uniform_int_distribution<std::mt19937::result_type> rngDiets(1, nb_diets);
-    std::uniform_int_distribution<std::mt19937::result_type> rngStats(1, nb_stats);
-    chosen_diet = rngDiets(rng) - 1;
-    chosen_stat = rngStats(rng) - 1;
 
     // Generating the run
     std::uniform_int_distribution<std::mt19937::result_type> rngBiome(0, (exits_fact-1));
@@ -175,34 +194,42 @@ std::vector<Biome> run_main(int bc_lvl, bool has_vine, bool has_tp, bool has_ram
         current_biome = current_biome.getExits()[chosen_biome]->getBiome();
     }
     biomes_run.push_back(current_biome);
-
-
-    // Generating the output
-    if (!benchmarking_mode)
-    {
-        for each (Biome biome in biomes_run)
-        {
-            std::cout << biome.getDisplayName() << std::endl;
-        }
-    }
     
-
     return biomes_run;
 }
 
 int main() {
-    int const MAX_ITER = 1000;
     std::unordered_map<std::string, int> bench_results;
     std::vector<Biome> run_generated;
-    int bc_lvl(0);
+    int bc_lvl(0), nb_iter(0);
     bool has_vine(true), has_tp(true), has_ram(true), has_spider(true), has_rotg(true), has_bad_seeds(true), benchmark_mode(false);
-    std::string lang = "lang_en", challenge_biomes_enabled = "True";
+    std::string lang = "lang_en", challenge_biomes_enabled, output_file, diet_chosen, stat_chosen;
+
+    std::unordered_map<std::string, int>::iterator itr;
+
+    std::string json_path = "params.json";
+    std::ifstream json_stream(json_path);
+    nlohmann::json j;
+    json_stream >> j;
+    bc_lvl = j["settings"]["bc"];
+    j["settings"]["lang"].get_to(lang);
+    lang = "lang_" + lang;
+    j["settings"]["challenge_biomes"].get_to(challenge_biomes_enabled);
+    j["settings"]["output_file"].get_to(output_file);
+    nb_iter = j["settings"]["nb_tests_benchmark"];
+    benchmark_mode = j["settings"]["benchmarking_mode"];
+    has_vine = j["settings"]["vine_rune"];
+    has_tp = j["settings"]["tp_rune"];
+    has_ram = j["settings"]["ram_rune"];
+    has_spider = j["settings"]["spider_rune"];
+    has_rotg = j["settings"]["rotg"];
+    has_bad_seeds = j["settings"]["bad_seeds"];
 
     if (benchmark_mode)
     {
-        for (size_t i = 0; i < MAX_ITER; i++)
+        for (size_t i = 0; i < nb_iter; i++)
         {
-            run_generated = run_main(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, benchmark_mode);
+            run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, benchmark_mode);
             for each (Biome biome in run_generated)
             {
                 if (bench_results.find(biome.getInternName()) == bench_results.end())
@@ -215,17 +242,30 @@ int main() {
                 }
             }
         }
-        std::unordered_map<std::string, int>::iterator itr;
+    }
+    else
+    {
+        diet_chosen = diet_generator(lang);
+        stat_chosen = stat_generator(lang);
+        run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, benchmark_mode);
+    }
 
+    std::ofstream output_stream(output_file);
+    if (benchmark_mode)
+    {
         for (itr = bench_results.begin(); itr != bench_results.end(); itr++)
         {
-            std::cout << itr->first << ": " << itr->second << std::endl;
+            output_stream << itr->first << ": " << itr->second << std::endl;
         }
     }
     else
     {
-
+        output_stream << "Diet: " << diet_chosen << std::endl;
+        output_stream << "Statistic chosen: " << stat_chosen << std::endl;
+        output_stream << "Run:" << std::endl;
+        for each (Biome b in run_generated)
+        {
+            output_stream << b.getDisplayName() << std::endl;
+        }
     }
-
-    while(true) {}
 }

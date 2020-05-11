@@ -1,164 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <biome_list>
 	<biome>
-		<internal_name>conc</internal_name>
-		<lang_en>The Concierge</lang_en>
-		<lang_fr>Le Concierge</lang_fr>
-		<exits_list>
-			<exit>
-				<to>stilt</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-			<exit>
-				<to>sanct</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>True</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-		</exits_list>
-	</biome>
-	<biome>
-		<internal_name>conj</internal_name>
-		<lang_en>Conjunctivius</lang_en>
-		<lang_fr>Conjonctivius</lang_fr>
-		<exits_list>
-			<exit>
-				<to>sanct</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-			<exit>
-				<to>graves</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>True</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-		</exits_list>
-	</biome>
-	<biome>
-		<internal_name>mama</internal_name>
-		<lang_en>Mama Tick</lang_en>
-		<lang_fr>Maman Tique</lang_fr>
-		<exits_list>
-			<exit>
-				<to>stilt</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-			<exit>
-				<to>graves</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>True</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-		</exits_list>
-	</biome>
-	<biome>
-		<internal_name>tk</internal_name>
-		<lang_en>The Time Keeper</lang_en>
-		<lang_fr>La Gardienne du Temps</lang_fr>
-		<exits_list>
-			<exit>
-				<to>castle</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-		</exits_list>
-	</biome>
-	<biome>
-		<internal_name>giant</internal_name>
-		<lang_en>The Giant</lang_en>
-		<lang_fr>Le Gigantus</lang_fr>
-		<exits_list>
-			<exit>
-				<to>castle</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-			<exit>
-				<to>hotk</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-		</exits_list>
-	</biome>
-	<biome>
-		<internal_name>hotk</internal_name>
-		<lang_en>The Hand of the King</lang_en>
-		<lang_fr>La Main du Roi</lang_fr>
-		<exits_list>
-			<exit>
-				<to>astro</to>
-				<min_bc>5</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>True</rotg>
-				<bad_seeds>False</bad_seeds>
-			</exit>
-		</exits_list>
-	</biome>
-	<biome>
-		<internal_name>spoilerBoy</internal_name>
-		<lang_en>The Collector</lang_en>
-		<lang_fr>Le Collecteur</lang_fr>
-		<exits_list></exits_list>
-	</biome>
-	<biome>
 		<internal_name>pq</internal_name>
 		<lang_en>Prisoners' Quarters</lang_en>
 		<lang_fr>Quartier des prisonniers</lang_fr>
@@ -285,6 +127,46 @@
 				<ram_rune>True</ram_rune>
 				<spider_rune>False</spider_rune>
 				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>greenhouse</internal_name>
+		<lang_en>The Dilapidated Arboretum</lang_en>
+		<lang_fr>Serre</lang_fr>
+		<exits_list>
+			<exit>
+				<to>roof</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+			<exit>
+				<to>morass</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>True</bad_seeds>
+			</exit>
+			<exit>
+				<to>depths</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>True</spider_rune>
+				<challenge_biome>True</challenge_biome>
 				<rotg>False</rotg>
 				<bad_seeds>False</bad_seeds>
 			</exit>
@@ -418,6 +300,111 @@
 				<tp_rune>False</tp_rune>
 				<ram_rune>False</ram_rune>
 				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>morass</internal_name>
+		<lang_en>The Morass of the Banished</lang_en>
+		<lang_fr>Marais</lang_fr>
+		<exits_list>
+			<exit>
+				<to>mama</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>True</bad_seeds>
+			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>conc</internal_name>
+		<lang_en>The Concierge</lang_en>
+		<lang_fr>Le Concierge</lang_fr>
+		<exits_list>
+			<exit>
+				<to>stilt</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+			<exit>
+				<to>sanct</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>True</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>conj</internal_name>
+		<lang_en>Conjunctivius</lang_en>
+		<lang_fr>Conjonctivius</lang_fr>
+		<exits_list>
+			<exit>
+				<to>sanct</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+			<exit>
+				<to>graves</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>True</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>mama</internal_name>
+		<lang_en>Mama Tick</lang_en>
+		<lang_fr>Maman Tique</lang_fr>
+		<exits_list>
+			<exit>
+				<to>stilt</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+			<exit>
+				<to>graves</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>True</spider_rune>
 				<challenge_biome>False</challenge_biome>
 				<rotg>False</rotg>
 				<bad_seeds>False</bad_seeds>
@@ -588,10 +575,39 @@
 		</exits_list>
 	</biome>
 	<biome>
-		<internal_name>castle</internal_name>
-		<lang_en>High Peak Castle</lang_en>
-		<lang_fr>Château de Haute-Cime</lang_fr>
+		<internal_name>tk</internal_name>
+		<lang_en>The Time Keeper</lang_en>
+		<lang_fr>La Gardienne du Temps</lang_fr>
 		<exits_list>
+			<exit>
+				<to>castle</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>giant</internal_name>
+		<lang_en>The Giant</lang_en>
+		<lang_fr>Le Gigantus</lang_fr>
+		<exits_list>
+			<exit>
+				<to>castle</to>
+				<min_bc>0</min_bc>
+				<vine_rune>False</vine_rune>
+				<tp_rune>False</tp_rune>
+				<ram_rune>False</ram_rune>
+				<spider_rune>False</spider_rune>
+				<challenge_biome>False</challenge_biome>
+				<rotg>False</rotg>
+				<bad_seeds>False</bad_seeds>
+			</exit>
 			<exit>
 				<to>hotk</to>
 				<min_bc>0</min_bc>
@@ -624,61 +640,45 @@
 		</exits_list>
 	</biome>
 	<biome>
-		<internal_name>greenhouse</internal_name>
-		<lang_en>The Dilapidated Arboretum</lang_en>
-		<lang_fr>Serre</lang_fr>
+		<internal_name>hotk</internal_name>
+		<lang_en>The Hand of the King</lang_en>
+		<lang_fr>La Main du Roi</lang_fr>
 		<exits_list>
 			<exit>
-				<to>roof</to>
-				<min_bc>0</min_bc>
+				<to>astro</to>
+				<min_bc>5</min_bc>
 				<vine_rune>False</vine_rune>
 				<tp_rune>False</tp_rune>
 				<ram_rune>False</ram_rune>
 				<spider_rune>False</spider_rune>
 				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
+				<rotg>True</rotg>
 				<bad_seeds>False</bad_seeds>
 			</exit>
+		</exits_list>
+	</biome>
+	<biome>
+		<internal_name>castle</internal_name>
+		<lang_en>High Peak Castle</lang_en>
+		<lang_fr>Château de Haute-Cime</lang_fr>
+		<exits_list>
 			<exit>
-				<to>morass</to>
+				<to>hotk</to>
 				<min_bc>0</min_bc>
 				<vine_rune>False</vine_rune>
 				<tp_rune>False</tp_rune>
 				<ram_rune>False</ram_rune>
 				<spider_rune>False</spider_rune>
 				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>True</bad_seeds>
-			</exit>
-			<exit>
-				<to>depths</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>True</spider_rune>
-				<challenge_biome>True</challenge_biome>
 				<rotg>False</rotg>
 				<bad_seeds>False</bad_seeds>
 			</exit>
 		</exits_list>
 	</biome>
 	<biome>
-		<internal_name>morass</internal_name>
-		<lang_en>The Morass of the Banished</lang_en>
-		<lang_fr>Marais</lang_fr>
-		<exits_list>
-			<exit>
-				<to>mama</to>
-				<min_bc>0</min_bc>
-				<vine_rune>False</vine_rune>
-				<tp_rune>False</tp_rune>
-				<ram_rune>False</ram_rune>
-				<spider_rune>False</spider_rune>
-				<challenge_biome>False</challenge_biome>
-				<rotg>False</rotg>
-				<bad_seeds>True</bad_seeds>
-			</exit>
-		</exits_list>
+		<internal_name>spoilerBoy</internal_name>
+		<lang_en>The Collector</lang_en>
+		<lang_fr>Le Collecteur</lang_fr>
+		<exits_list></exits_list>
 	</biome>
 </biome_list>
