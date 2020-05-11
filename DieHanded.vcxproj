@@ -103,10 +103,14 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="basicData.cpp" />
+    <ClCompile Include="biomes.cpp" />
     <ClCompile Include="D:\Documents\pugixml-1.10\src\pugixml.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="basicData.h" />
+    <ClInclude Include="biomes.h" />
     <ClInclude Include="D:\Documents\pugixml-1.10\src\pugiconfig.hpp" />
     <ClInclude Include="D:\Documents\pugixml-1.10\src\pugixml.hpp" />
     <ClInclude Include="json.hpp" />

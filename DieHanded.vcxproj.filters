@@ -21,6 +21,12 @@
     <ClCompile Include="D:\Documents\pugixml-1.10\src\pugixml.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="basicData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="biomes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -33,6 +39,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="basicData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="biomes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

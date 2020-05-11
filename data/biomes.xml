@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<biomes_list>
+<biome_list>
 	<biome>
 		<internal_name>conc</internal_name>
 		<lang_en>The Concierge</lang_en>
@@ -681,4 +681,4 @@
 			</exit>
 		</exits_list>
 	</biome>
-</biomes_list>
+</biome_list>
