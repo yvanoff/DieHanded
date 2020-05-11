@@ -14,7 +14,9 @@
       "ram_rune": "True",
       "spider_rune": "True",
       "build_restrictions": "True",
-      "draw_gear_first":  "True"
+      "draw_gear_first": "True",
+      "benchmarking_mode": "False",
+      "nb_tests_benchmark":  "1000"
     }
   ]
 }

@@ -15,29 +15,18 @@ class Biome;
 
 // A transition goes from one Biome to the other
 // Here Transitions will never be used on their own but always as an attribute of a Biome: that Biome will be the starting one
-// But we need to have the exit Biome as arribute, to be able to set it or to get it
-// All the other attributes are linked to variables in game: some transitions can only be accessed with some abilities or at some difficulty settings, so we need to account for that
-// And of course we need to access tgem (but no need to modifiy them, the characteristics of a transition are fixed and never change)
+// But we need to have the exit Biome as attribute, to be able to set it or to get it
+// And we need the name of the target biome for linking issues
 
 class Transition
 {
 public:
     Transition() = default;
-    Transition(std::string const& exitC, int const& min_bcC, bool const& vineC,
-        bool const& tpC, bool const& ramC, bool const& spiderC, bool const& challengeC,
-        bool const& rotgC, bool const& badSeedsC);
+    Transition(std::string const& exitC);
     ~Transition();
     void setBiome(Biome& exit_set);
     Biome getBiome();
     std::string getName();
-    int getBC();
-    bool getVine();
-    bool getTP();
-    bool getRam();
-    bool getSpider();
-    bool getChallenge();
-    bool getROTG();
-    bool getBadSeeds();
 
 private:
     Biome* exit;
@@ -64,6 +53,7 @@ public:
     Biome(std::string const& interName, std::string const& displayName);
     ~Biome();
     void setExit(Transition& new_exit);
+    void clearExits();
     std::vector<Transition*> getExits();
     std::string getDisplayName();
     std::string getInternName();

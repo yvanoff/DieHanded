@@ -8,6 +8,7 @@
 #include <time.h>
 #include <random>
 #include <vector>
+#include <cmath>
 #include "pugixml.hpp"
 #include "json.hpp"
 #include "basicData.h"
@@ -38,8 +39,12 @@ std::vector<basicData> loadXML_basic(std::string const& xml_path, std::string co
 // A special function used to load the biomes.xml file
 // How biomes are represented is explained in the biomes.h file.
 // The function is vastly hardcoded because it is not supposed to load anything else and the biome structure is too peculiar to have a more generic function
-// Only parameter is a string to know which languages to load localizations for
-std::unordered_map<std::string, Biome> loadXML_biomes(std::string const& lang_choice)
+// Parameters are:
+//      - the language used for localizations
+//      - run parameters. Those are gameplay elements that enable or disable some transitions. We will load only the transitions the player has access to
+//        based on those parameters
+std::unordered_map<std::string, Biome> loadXML_biomes(std::string const& lang_choice, int bc_setting, bool vine_rune, bool tp_rune, bool ram_rune,
+    bool spider_rune, std::string challenge_biomes_enabled, bool rotg, bool bad_seeds)
 {
     const std::string xml_path = "data/biomes.xml";
     pugi::xml_document xml_data;
@@ -48,22 +53,37 @@ std::unordered_map<std::string, Biome> loadXML_biomes(std::string const& lang_ch
     Transition* tmp_trans;
 
     int min_bc;
+    bool vine_req, tp_req, ram_req, spider_req, is_challenge, rotg_req, bad_seeds_req, challenge_biomes_enabled_bool, challenge_biome_set, challenge_biomes_disabled;
+    challenge_biomes_enabled_bool = (std::strcmp(challenge_biomes_enabled.c_str(), "True") == 0);
+    challenge_biomes_disabled = (std::strcmp(challenge_biomes_enabled.c_str(), "False") == 0);
 
     for (pugi::xml_node node = xml_data.child("biome_list").child("biome"); node; node = node.next_sibling("biome"))
     {
+        challenge_biome_set = false;
         data_collection[node.child_value("internal_name")] = Biome(node.child_value("internal_name"), node.child_value(lang_choice.c_str()));
         for (pugi::xml_node node_exit = node.child("exits_list").child("exit"); node_exit; node_exit = node_exit.next_sibling("exit"))
         {
             tmp_trans = new Transition;
             min_bc = std::stoi(std::string(node_exit.child_value("min_bc")));
-            *tmp_trans = Transition(node_exit.child_value("to"), min_bc , (std::strcmp(node_exit.child_value("vine_rune"), "True") == 0), 
-                (std::strcmp(node_exit.child_value("tp_rune"), "True") == 0),
-                (std::strcmp(node_exit.child_value("ram_rune"), "True") == 0),
-                (std::strcmp(node_exit.child_value("spider_rune"), "True") == 0),
-                (std::strcmp(node_exit.child_value("challenge_biome"), "True") == 0),
-                (std::strcmp(node_exit.child_value("rotg"), "True") == 0),
-                (std::strcmp(node_exit.child_value("bad_seeds"), "True") == 0));
-            data_collection.find(node.child_value("internal_name"))->second.setExit(*tmp_trans);
+            vine_req = (std::strcmp(node_exit.child_value("vine_rune"), "True") == 0);
+            tp_req = (std::strcmp(node_exit.child_value("tp_rune"), "True") == 0);
+            ram_req = (std::strcmp(node_exit.child_value("ram_rune"), "True") == 0);
+            spider_req = (std::strcmp(node_exit.child_value("spider_rune"), "True") == 0);
+            is_challenge = (std::strcmp(node_exit.child_value("challenge_biome"), "True") == 0);
+            rotg_req = (std::strcmp(node_exit.child_value("rotg"), "True") == 0);
+            bad_seeds_req = (std::strcmp(node_exit.child_value("bad_seeds"), "True") == 0);
+            *tmp_trans = Transition(node_exit.child_value("to"));
+            if ((min_bc <= bc_setting) && (!(vine_req && (!vine_rune))) && (!(tp_req && (!tp_rune))) && (!(ram_req && (!ram_rune)))
+                && (!(spider_req && (!spider_rune))) && (!(is_challenge && challenge_biomes_disabled) && (!challenge_biome_set))
+                && (!(rotg_req && (!rotg))) && (!(bad_seeds_req && (!bad_seeds))))
+            {
+                challenge_biome_set = (is_challenge && challenge_biomes_enabled_bool);
+                if (challenge_biome_set)
+                {
+                    data_collection.find(node.child_value("internal_name"))->second.clearExits();
+                }
+                data_collection.find(node.child_value("internal_name"))->second.setExit(*tmp_trans);
+            }
         }
     }
 
@@ -93,25 +113,25 @@ std::unordered_map<std::string, Biome> setup_connections(std::unordered_map<std:
 }
 
 
-int main() {
+std::vector<Biome> run_main(int bc_lvl, bool has_vine, bool has_tp, bool has_ram, bool has_spider, bool has_rotg, bool has_bad_seeds,
+    std::string lang, std::string challenge_biomes_enabled, bool benchmarking_mode) {
 
     // Starter biome is hardcoded because it's not supposed to change
     std::string const STARTING_BIOME = "pq";
 
-
-    // We then load the parameters of the run
-    // Those parameters are stored in a JSON file and describe which in game abilities the player has access to
-    // In game abilities and the difficulty settings affect the existence of some transitions
-    // It would be bad to generate a run the player can't complete because he doesn't have the abilities to do so !
-
-    int bc_lvl (0);
-    bool has_vine(true),has_tp(true),has_ram(true),has_spider(true),challenge_biomes_enabled (true), has_rotg (true), has_bad_seeds (true);
-    std::string lang = "lang_en";
+    // Maximum number of exits a biome have - used for rng generators later
+    int const MAX_EXITS = 4;
+    int exits_fact(1);
+    for (size_t i = 1; i <= MAX_EXITS; i++)
+    {
+        exits_fact *= i;
+    }
 
     // Initiating the RNG
     std::random_device dev;
     std::mt19937 rng(dev());
-    int nb_stats (0), nb_diets (0);
+    std::default_random_engine generator;
+    int nb_stats (0), nb_diets (0), chosen_diet (0), chosen_stat(0), chosen_biome(0);
 
 
     // Loading the diets and setting the variables to pick one at random
@@ -131,11 +151,81 @@ int main() {
     // Loading the Biome list
     std::unordered_map<std::string, Biome> biomes_collection;
 
-    biomes_collection = loadXML_biomes("lang_en");
+    biomes_collection = loadXML_biomes("lang_en", bc_lvl, has_vine, has_tp, has_ram, has_spider, challenge_biomes_enabled, has_rotg, has_bad_seeds);
     biomes_collection = setup_connections(biomes_collection);
 
 
+    // Generating random diet and stat
     std::uniform_int_distribution<std::mt19937::result_type> rngDiets(1, nb_diets);
     std::uniform_int_distribution<std::mt19937::result_type> rngStats(1, nb_stats);
-    return 0;
+    chosen_diet = rngDiets(rng) - 1;
+    chosen_stat = rngStats(rng) - 1;
+
+    // Generating the run
+    std::uniform_int_distribution<std::mt19937::result_type> rngBiome(0, (exits_fact-1));
+    std::vector<Biome> biomes_run;
+    Biome current_biome;
+
+    current_biome = biomes_collection.find(STARTING_BIOME)->second;
+
+    while (current_biome.getExits().size() > 0)
+    {
+        biomes_run.push_back(current_biome);
+        chosen_biome = rngBiome(rng) / (exits_fact/current_biome.getExits().size());
+        current_biome = current_biome.getExits()[chosen_biome]->getBiome();
+    }
+    biomes_run.push_back(current_biome);
+
+
+    // Generating the output
+    if (!benchmarking_mode)
+    {
+        for each (Biome biome in biomes_run)
+        {
+            std::cout << biome.getDisplayName() << std::endl;
+        }
+    }
+    
+
+    return biomes_run;
+}
+
+int main() {
+    int const MAX_ITER = 1000;
+    std::unordered_map<std::string, int> bench_results;
+    std::vector<Biome> run_generated;
+    int bc_lvl(0);
+    bool has_vine(true), has_tp(true), has_ram(true), has_spider(true), has_rotg(true), has_bad_seeds(true), benchmark_mode(false);
+    std::string lang = "lang_en", challenge_biomes_enabled = "True";
+
+    if (benchmark_mode)
+    {
+        for (size_t i = 0; i < MAX_ITER; i++)
+        {
+            run_generated = run_main(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, benchmark_mode);
+            for each (Biome biome in run_generated)
+            {
+                if (bench_results.find(biome.getInternName()) == bench_results.end())
+                {
+                    bench_results[biome.getInternName()] = 1;
+                }
+                else
+                {
+                    bench_results[biome.getInternName()]++;
+                }
+            }
+        }
+        std::unordered_map<std::string, int>::iterator itr;
+
+        for (itr = bench_results.begin(); itr != bench_results.end(); itr++)
+        {
+            std::cout << itr->first << ": " << itr->second << std::endl;
+        }
+    }
+    else
+    {
+
+    }
+
+    while(true) {}
 }
