@@ -5,11 +5,9 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <random>
 #include <vector>
-#include <cmath>
-#include<fstream>
+#include <fstream>
 #include "pugixml.hpp"
 #include "json.hpp"
 #include "basicData.h"
@@ -154,7 +152,7 @@ std::string diet_generator(std::string lang)
 }
 
 std::vector<Biome> biome_generator(int bc_lvl, bool has_vine, bool has_tp, bool has_ram, bool has_spider, bool has_rotg, bool has_bad_seeds,
-    std::string lang, std::string challenge_biomes_enabled, bool benchmarking_mode) {
+    std::string lang, std::string challenge_biomes_enabled, std::unordered_map<std::string, Biome> biomes_collection) {
 
     // Starter biome is hardcoded because it's not supposed to change
     std::string const STARTING_BIOME = "pq";
@@ -172,13 +170,6 @@ std::vector<Biome> biome_generator(int bc_lvl, bool has_vine, bool has_tp, bool 
     std::mt19937 rng(dev());
     std::default_random_engine generator;
     int chosen_biome(0);
-
-
-    // Loading the Biome list
-    std::unordered_map<std::string, Biome> biomes_collection;
-
-    biomes_collection = loadXML_biomes(lang, bc_lvl, has_vine, has_tp, has_ram, has_spider, challenge_biomes_enabled, has_rotg, has_bad_seeds);
-    biomes_collection = setup_connections(biomes_collection);
 
     // Generating the run
     std::uniform_int_distribution<std::mt19937::result_type> rngBiome(0, (exits_fact-1));
@@ -206,6 +197,7 @@ int main() {
     std::string lang = "lang_en", challenge_biomes_enabled, output_file, diet_chosen, stat_chosen;
 
     std::unordered_map<std::string, int>::iterator itr;
+    std::unordered_map<std::string, Biome>::iterator other_itr;
 
     std::string json_path = "params.json";
     std::ifstream json_stream(json_path);
@@ -225,21 +217,24 @@ int main() {
     has_rotg = j["settings"]["rotg"];
     has_bad_seeds = j["settings"]["bad_seeds"];
 
+    // Loading the Biome list
+    std::unordered_map<std::string, Biome> biomes_collection;
+
+    biomes_collection = loadXML_biomes(lang, bc_lvl, has_vine, has_tp, has_ram, has_spider, challenge_biomes_enabled, has_rotg, has_bad_seeds);
+    biomes_collection = setup_connections(biomes_collection);
+
     if (benchmark_mode)
     {
+        for (other_itr = biomes_collection.begin(); other_itr != biomes_collection.end(); other_itr++)
+        {
+            bench_results[other_itr->second.getDisplayName()] = 0;
+        }
         for (size_t i = 0; i < nb_iter; i++)
         {
-            run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, benchmark_mode);
+            run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, biomes_collection);
             for each (Biome biome in run_generated)
             {
-                if (bench_results.find(biome.getInternName()) == bench_results.end())
-                {
-                    bench_results[biome.getInternName()] = 1;
-                }
-                else
-                {
-                    bench_results[biome.getInternName()]++;
-                }
+                bench_results[biome.getDisplayName()]++;
             }
         }
     }
@@ -247,7 +242,7 @@ int main() {
     {
         diet_chosen = diet_generator(lang);
         stat_chosen = stat_generator(lang);
-        run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, benchmark_mode);
+        run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, lang, challenge_biomes_enabled, biomes_collection);
     }
 
     std::ofstream output_stream(output_file);
@@ -255,7 +250,7 @@ int main() {
     {
         for (itr = bench_results.begin(); itr != bench_results.end(); itr++)
         {
-            output_stream << itr->first << ": " << itr->second << std::endl;
+            output_stream << itr->first << ": " << itr->second*1.0/nb_iter << std::endl;
         }
     }
     else

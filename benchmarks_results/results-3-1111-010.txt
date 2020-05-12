@@ -1,0 +1,25 @@
+Prisoners' Quarters: 1
+Prison Depths: 0
+The Dilapidated Arboretum: 0
+Forgotten Sepulcher: 0.408
+The Concierge: 0.529
+Toxic Sewers: 0.477
+Promenade of the Condemned: 0.523
+Ossuary: 0.284
+Ramparts: 0.4795
+Corrupted Prison: 0
+Ancient Sewers: 0.2365
+The Morass of the Banished: 0
+The Time Keeper: 0.529
+Conjunctivius: 0.471
+Mama Tick: 0
+High Peak Castle: 0.7685
+Stilt Village: 0.278
+The Collector: 0
+Slumbering Sanctuary: 0.48
+Graveyard: 0.242
+Clock Tower: 0.3225
+Cavern: 0.2695
+The Giant: 0.471
+Astrolab: 0
+The Hand of the King: 1

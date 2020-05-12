@@ -1,7 +1,7 @@
 {
   "settings": {
     "bc": 5,
-    "challenge_biomes": "True",
+    "challenge_biomes": "Random",
     "rotg": true,
     "bad_seeds": true,
     "lang": "en",
@@ -16,7 +16,7 @@
     "draw_gear_first": true,
     "nb_max_muts": 3,
     "benchmarking_mode": true,
-    "nb_tests_benchmark": 1000,
-    "output_file": "results.txt"
+    "nb_tests_benchmark": 10000,
+    "output_file": "benchmarks_results/results-5-1111-R11.txt"
   }
 }

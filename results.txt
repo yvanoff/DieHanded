@@ -1,25 +1,25 @@
-sanct: 372
-pq: 1000
-corrPris: 335
-toxicS: 335
-ancientS: 389
-conj: 467
-cavern: 317
-giant: 538
-mama: 217
-castle: 726
-hotk: 1000
-astro: 1000
-stilt: 278
-spoilerBoy: 1000
-sep: 437
-prom: 330
-depths: 665
-greenhouse: 335
-graves: 350
-morass: 217
-ct: 246
-conc: 316
-tk: 462
-roof: 155
-oss: 239
+Prisoners' Quarters: 1
+Prison Depths: 0.674
+The Dilapidated Arboretum: 0.325
+Forgotten Sepulcher: 0.46
+The Concierge: 0.3
+Toxic Sewers: 0.326
+Promenade of the Condemned: 0.349
+Ossuary: 0.214
+Ramparts: 0.159
+Corrupted Prison: 0.326
+Ancient Sewers: 0.395
+The Morass of the Banished: 0.232
+The Time Keeper: 0.498
+Conjunctivius: 0.468
+Mama Tick: 0.232
+High Peak Castle: 0.761
+Stilt Village: 0.277
+The Collector: 1
+Slumbering Sanctuary: 0.375
+Graveyard: 0.348
+Clock Tower: 0.252
+Cavern: 0.288
+The Giant: 0.502
+Astrolab: 1
+The Hand of the King: 1
