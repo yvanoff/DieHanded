@@ -9,6 +9,12 @@ public:
         std::vector<std::string> initRequires, std::vector<std::string> initEnables, std::vector<std::string> initFlags);
     ~Gear();
     std::string gearToString();
+    std::string getName();
+    std::vector<std::string> getScaling();
+    std::vector<std::string> getType();
+    std::vector<std::string> getRequired();
+    std::vector<std::string> getEnabled();
+    std::vector<std::string> getFlags();
 
 private:
     std::string internalName; // name

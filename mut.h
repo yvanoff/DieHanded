@@ -9,6 +9,9 @@ public:
     Mutation(std::string name, std::vector<std::vector<std::string>> gameplayMod, std::string mutScales);
     ~Mutation();
     std::string mutToString();
+    std::string getName();
+    std::string getScaling();
+    std::vector<std::vector<std::string>> getGameplay();
 
 private:
     std::string internalName;

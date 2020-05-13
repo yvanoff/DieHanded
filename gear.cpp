@@ -58,3 +58,58 @@ std::string Gear::gearToString()
 	}
 	return gearString;
 }
+
+std::string Gear::getName()
+{
+	return internalName;
+}
+
+std::vector<std::string> Gear::getScaling()
+{
+	std::vector<std::string> resReq;
+	for each (std::string stat in scaling)
+	{
+		resReq.push_back(stat);
+	}
+	return resReq;
+}
+
+std::vector<std::string> Gear::getType()
+{
+	std::vector<std::string> resReq;
+	for each (std::string type in gearType)
+	{
+		resReq.push_back(type);
+	}
+	return resReq;
+}
+
+std::vector<std::string> Gear::getRequired()
+{
+	std::vector<std::string> resReq;
+	for each (std::string req in requires)
+	{
+		resReq.push_back(req);
+	}
+	return resReq;
+}
+
+std::vector<std::string> Gear::getEnabled()
+{
+	std::vector<std::string> resReq;
+	for each (std::string en in enables)
+	{
+		resReq.push_back(en);
+	}
+	return resReq;
+}
+
+std::vector<std::string> Gear::getFlags()
+{
+	std::vector<std::string> resReq;
+	for each (std::string flag in gameplayFlags)
+	{
+		resReq.push_back(flag);
+	}
+	return resReq;
+}

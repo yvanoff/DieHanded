@@ -5,11 +5,15 @@
 #include "mut.h"
 class Build
 {
+    // max number of skills and weapons (not necessarily one/two of each)
+    // weapons vectors to have more than 1
 public:
-    Build() = default;
     Build();
+    Build(Build const& toCopy);
     ~Build();
-    void addGear(Gear gearToAdd);
+    void addMain(Gear mainToAdd);
+    void addOffHand(Gear offToAdd);
+    void addSkill(Gear skillToAdd);
     void addMut(Mutation mutToAdd);
     bool isWeaponCompatible(Gear gearToTest);
     bool isMutCompatible(Mutation mutToTest);
@@ -17,11 +21,11 @@ public:
     std::vector<std::string> mutsToVec();
 
 private:
-    int nbWeapons;
-    int nbSkills;
-    std::vector<Gear> gearList;
+    Gear* mainWeapon;
+    Gear* offHand;
+    std::vector<Gear> skills;
     std::vector<Mutation> mutList;
-    std::vector<std::string> gameplayRequired;
+    std::vector<std::vector<std::string>> gameplayRequired;
     std::vector<std::string> gameplayEnabled;
     std::vector<std::string> otherFlags;
 };

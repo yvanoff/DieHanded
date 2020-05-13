@@ -42,3 +42,29 @@ std::string Mutation::mutToString()
 	}
 	return mutString;
 }
+
+std::string Mutation::getName()
+{
+	return internalName;
+}
+
+std::string Mutation::getScaling()
+{
+	return scaling;
+}
+
+std::vector<std::vector<std::string>> Mutation::getGameplay()
+{
+	std::vector<std::vector<std::string>> resReq;
+	std::vector<std::string> tmpStore;
+	for each (std::vector<std::string> condition in requiredGameplay)
+	{
+		for each (std::string modifier in condition)
+		{
+			tmpStore.push_back(modifier);
+		}
+		resReq.push_back(tmpStore);
+		tmpStore.clear();
+	}
+	return resReq;
+}
