@@ -42,12 +42,11 @@ class Biome
 {
 public:
     Biome() = default;
-    Biome(std::string const& interName, std::string const& displayName);
+    Biome(std::string const& interName);
     ~Biome();
     void setExit(Transition& new_exit);
     void clearExits();
     std::vector<Transition*> getExits();
-    std::string getDisplayName();
     std::string getInternName();
 
 private:

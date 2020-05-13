@@ -2,8 +2,6 @@
 <biome_list>
 	<biome>
 		<internal_name>pq</internal_name>
-		<lang_en>Prisoners' Quarters</lang_en>
-		<lang_fr>Quartier des prisonniers</lang_fr>
 		<beginner_biome>True</beginner_biome>
 		<exits_list>
 			<exit>
@@ -43,8 +41,6 @@
 	</biome>
 	<biome>
 		<internal_name>prom</internal_name>
-		<lang_en>Promenade of the Condemned</lang_en>
-		<lang_fr>Promenade des condamnés</lang_fr>
 		<exits_list>
 			<exit>
 				<to>depths</to>
@@ -94,8 +90,6 @@
 	</biome>
 	<biome>
 		<internal_name>toxicS</internal_name>
-		<lang_en>Toxic Sewers</lang_en>
-		<lang_fr>Egouts toxiques</lang_fr>
 		<exits_list>
 			<exit>
 				<to>corrPris</to>
@@ -134,8 +128,6 @@
 	</biome>
 	<biome>
 		<internal_name>greenhouse</internal_name>
-		<lang_en>The Dilapidated Arboretum</lang_en>
-		<lang_fr>Serre</lang_fr>
 		<exits_list>
 			<exit>
 				<to>roof</to>
@@ -174,8 +166,6 @@
 	</biome>
 	<biome>
 		<internal_name>depths</internal_name>
-		<lang_en>Prison Depths</lang_en>
-		<lang_fr>Profondeurs de la Prison</lang_fr>
 		<exits_list>
 			<exit>
 				<to>oss</to>
@@ -214,8 +204,6 @@
 	</biome>
 	<biome>
 		<internal_name>corrPris</internal_name>
-		<lang_en>Corrupted Prison</lang_en>
-		<lang_fr>Prison corrompue</lang_fr>
 		<exits_list>
 			<exit>
 				<to>ancientS</to>
@@ -243,8 +231,6 @@
 	</biome>
 	<biome>
 		<internal_name>roof</internal_name>
-		<lang_en>Ramparts</lang_en>
-		<lang_fr>Toits de la Prison</lang_fr>
 		<exits_list>
 			<exit>
 				<to>conc</to>
@@ -272,8 +258,6 @@
 	</biome>
 	<biome>
 		<internal_name>oss</internal_name>
-		<lang_en>Ossuary</lang_en>
-		<lang_fr>Charnier</lang_fr>
 		<exits_list>
 			<exit>
 				<to>conc</to>
@@ -290,8 +274,6 @@
 	</biome>
 	<biome>
 		<internal_name>ancientS</internal_name>
-		<lang_en>Ancient Sewers</lang_en>
-		<lang_fr>Ancien réseau d'égouts</lang_fr>
 		<exits_list>
 			<exit>
 				<to>conj</to>
@@ -308,8 +290,6 @@
 	</biome>
 	<biome>
 		<internal_name>morass</internal_name>
-		<lang_en>The Morass of the Banished</lang_en>
-		<lang_fr>Marais</lang_fr>
 		<exits_list>
 			<exit>
 				<to>mama</to>
@@ -326,8 +306,6 @@
 	</biome>
 	<biome>
 		<internal_name>conc</internal_name>
-		<lang_en>The Concierge</lang_en>
-		<lang_fr>Le Concierge</lang_fr>
 		<exits_list>
 			<exit>
 				<to>stilt</to>
@@ -355,8 +333,6 @@
 	</biome>
 	<biome>
 		<internal_name>conj</internal_name>
-		<lang_en>Conjunctivius</lang_en>
-		<lang_fr>Conjonctivius</lang_fr>
 		<exits_list>
 			<exit>
 				<to>sanct</to>
@@ -384,8 +360,6 @@
 	</biome>
 	<biome>
 		<internal_name>mama</internal_name>
-		<lang_en>Mama Tick</lang_en>
-		<lang_fr>Maman Tique</lang_fr>
 		<exits_list>
 			<exit>
 				<to>stilt</to>
@@ -413,8 +387,6 @@
 	</biome>
 	<biome>
 		<internal_name>stilt</internal_name>
-		<lang_en>Stilt Village</lang_en>
-		<lang_fr>Gué des Brumes</lang_fr>
 		<exits_list>
 			<exit>
 				<to>ct</to>
@@ -442,8 +414,6 @@
 	</biome>
 	<biome>
 		<internal_name>sanct</internal_name>
-		<lang_en>Slumbering Sanctuary</lang_en>
-		<lang_fr>Sanctuaire endormi</lang_fr>
 		<exits_list>
 			<exit>
 				<to>ct</to>
@@ -482,8 +452,6 @@
 	</biome>
 	<biome>
 		<internal_name>graves</internal_name>
-		<lang_en>Graveyard</lang_en>
-		<lang_fr>Cimetière du Val</lang_fr>
 		<exits_list>
 			<exit>
 				<to>sep</to>
@@ -511,8 +479,6 @@
 	</biome>
 	<biome>
 		<internal_name>ct</internal_name>
-		<lang_en>Clock Tower</lang_en>
-		<lang_fr>Tour de l'Horloge</lang_fr>
 		<exits_list>
 			<exit>
 				<to>tk</to>
@@ -529,8 +495,6 @@
 	</biome>
 	<biome>
 		<internal_name>sep</internal_name>
-		<lang_en>Forgotten Sepulcher</lang_en>
-		<lang_fr>Sépulcre oublié</lang_fr>
 		<exits_list>
 			<exit>
 				<to>tk</to>
@@ -558,8 +522,6 @@
 	</biome>
 	<biome>
 		<internal_name>cavern</internal_name>
-		<lang_en>Cavern</lang_en>
-		<lang_fr>Caverne</lang_fr>
 		<exits_list>
 			<exit>
 				<to>giant</to>
@@ -576,8 +538,6 @@
 	</biome>
 	<biome>
 		<internal_name>tk</internal_name>
-		<lang_en>The Time Keeper</lang_en>
-		<lang_fr>La Gardienne du Temps</lang_fr>
 		<exits_list>
 			<exit>
 				<to>castle</to>
@@ -594,8 +554,6 @@
 	</biome>
 	<biome>
 		<internal_name>giant</internal_name>
-		<lang_en>The Giant</lang_en>
-		<lang_fr>Le Gigantus</lang_fr>
 		<exits_list>
 			<exit>
 				<to>castle</to>
@@ -623,8 +581,6 @@
 	</biome>
 	<biome>
 		<internal_name>astro</internal_name>
-		<lang_en>Astrolab</lang_en>
-		<lang_fr>Astrolab</lang_fr>
 		<exits_list>
 			<exit>
 				<to>spoilerBoy</to>
@@ -641,8 +597,6 @@
 	</biome>
 	<biome>
 		<internal_name>hotk</internal_name>
-		<lang_en>The Hand of the King</lang_en>
-		<lang_fr>La Main du Roi</lang_fr>
 		<exits_list>
 			<exit>
 				<to>astro</to>
@@ -659,8 +613,6 @@
 	</biome>
 	<biome>
 		<internal_name>castle</internal_name>
-		<lang_en>High Peak Castle</lang_en>
-		<lang_fr>Château de Haute-Cime</lang_fr>
 		<exits_list>
 			<exit>
 				<to>hotk</to>
@@ -677,8 +629,6 @@
 	</biome>
 	<biome>
 		<internal_name>spoilerBoy</internal_name>
-		<lang_en>The Collector</lang_en>
-		<lang_fr>Le Collecteur</lang_fr>
 		<exits_list></exits_list>
 	</biome>
 </biome_list>

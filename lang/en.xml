@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang>
+	<outfits>
+		<classicO>Classic Outfit</classicO>
+		<goldenO>Golden Outfit</goldenO>
+		<legWarO>Legendary Warrior's Outfit</legWarO>
+		<ninja>Ninja Outfit</ninja>
+	</outfits>
+	<stats>
+		<brut>Brutality</brut>
+		<tact>Tactics</tact>
+		<surv>Survival</surv>
+	</stats>
+	<runes>
+		<vine>Vine Rune</vine>
+		<tp>Teleportation Rune</tp>
+		<ram>Ram Rune</ram>
+		<spider>Spider Rune</spider>
+	</runes>
+	<diets>
+		<carn>Carnivore</carn>
+		<castlev>Castlevaniesque</castlev>
+		<veggie>Vegetarian</veggie>
+		<fruit>Fruitarian</fruit>
+		<mobFood>Monster</mobFood>
+		<bagu>Baguette</bagu>
+		<hl2>Half-Life</hl2>
+	</diets>
+	<biomes>
+		<pq>Prisoners' Quarters</pq>
+		<prom>Promenade of the Condemned</prom>
+		<toxicS>Toxic Sewers</toxicS>
+		<greenhouse>The Dilapidated Arboretum</greenhouse>
+		<depths>Prison Depths</depths>
+		<corrPris>Corrupted Prison</corrPris>
+		<roof>Ramparts</roof>
+		<oss>Ossuary</oss>
+		<ancientS>Ancient Sewers</ancientS>
+		<morass>The Morass of the Banished</morass>
+		<conc>The Concierge</conc>
+		<conj>Conjunctivius</conj>
+		<mama>Mama Tick</mama>
+		<stilt>Stilt Village</stilt>
+		<sanct>Slumbering Sanctuary</sanct>
+		<graves>Graveyard</graves>
+		<ct>Clock Tower</ct>
+		<sep>Forgotten Sepulcher</sep>
+		<cavern>Cavern</cavern>
+		<tk>The Time Keeper</tk>
+		<giant>The Giant</giant>
+		<astro>Astrolab</astro>
+		<hotk>The Hand of the King</hotk>
+		<castle>High Peak Castle</castle>
+		<spoilerBoy>The Collector</spoilerBoy>
+	</biomes>
+	<muts>
+		<yolo>Ygdar Orus Li Ox!</yolo>
+		<killerI>Killer instinct</killerI>
+		<combo>Combo</combo>
+		<vengeance>Vengeance</vengeance>
+		<meleeMut>Melee</meleeMut>
+		<opWo>Open wounds</opWo>
+		<tainted>Tainted Flask</tainted>
+		<solRes>Soldier resistance</solRes>
+		<berz>Berserker</berz>
+		<adren>Adrenalin</adren>
+		<frzy>Frenzy</frzy>
+		<hunterI>Hunter's instinct</hunterI>
+		<support>Support</support>
+		<pGift>Parting Gift</pGift>
+		<tranq>Tranquility</tranq>
+		<jack>Ripper</jack>
+		<scheme>Scheme</scheme>
+		<init>Initiative</init>
+		<alien>Predator</alien>
+		<network>Networking</network>
+		<crowFoot>Crow's foot</crowFoot>
+		<retreat>Tactical Retreat</retreat>
+		<faith>Blind Faith</faith>
+		<counterMut>Counterattack</counterMut>
+		<wdkm>What Doesn't Kill Me</wdkm>
+		<necro>Necromancy</necro>
+		<xtended>Extended Healing</xtended>
+		<gastro>Gastronomy</gastro>
+		<spiteMut>Spite</spiteMut>
+		<frostbite>Frostbite</frostbite>
+		<hoI>Heart of Ice</hoI>
+		<moA>Instinct of the Master of Arms</moA>
+		<ammo>Ammo</ammo>
+		<recover>Recovery</recover>
+		<triage>Emergency Triage</triage>
+		<deadI>Dead Inside</deadI>
+		<alienation>Alienation</alienation>
+		<acceptance>Acceptance</acceptance>
+		<maso>Masochist</maso>
+		<diseng>Disengagement</diseng>
+	</muts>
+	<items>
+		<crossbo>Double Crossb-o-matic</crossbo>
+		<sinew>Sinew Slicer</sinew>
+		<heavyT>Heavy Turret</heavyT>
+		<barnacle>Barnacle</barnacle>
+		<flameT>Flamethrower Turret</flameT>
+		<cleaver>Cleaver</cleaver>
+		<wolfT>Wolf Trap</wolfT>
+		<crusher>Crusher</crusher>
+		<decoy>Explosive Decoy</decoy>
+		<eDoor>Emergency Door</eDoor>
+		<opNade>Powerful Grenade</opNade>
+		<infNade>Infantry Grenade</infNade>
+		<clusNade>Cluster Grenade</clusNade>
+		<magNade>Magnetic Grenade</magNade>
+		<stunNade>Stun Grenade</stunNade>
+		<iceNade>Ice Grenade</iceNade>
+		<fireNade>Fire Grenade</fireNade>
+		<rootNade>Root Grenade</rootNade>
+		<oilNade>Oil Grenade</oilNade>
+		<swarm>Swarm</swarm>
+		<deathOrb>Death Orb</deathOrb>
+		<tornado>Tornado</tornado>
+		<kDance>Knife Dance</kDance>
+		<politics>Corrupted Power</politics>
+		<vampirism>Vampirism</vampirism>
+		<tonic>Tonic</tonic>
+		<hook>Grappling Hook</hook>
+		<phaser>Phaser</phaser>
+		<temp>Temporal Distortion</temp>
+		<fart>Corrosive Cloud</fart>
+		<lacAura>Lacerating Aura</lacAura>
+		<wod>Wave of Denial</wod>
+		<wings>Wings of the Crow</wings>
+		<youkool>Great Owl of War</youkool>
+		<speedrun>Lightspeed</speedrun>
+		<whistle>Giant Whistle</whistle>
+		<telluric>Telluric Shock</telluric>
+		<beyblade>Collector's Syringe</beyblade>
+		<smoke>Smoke Bomb</smoke>
+		<mushBoi>Mushroom boi!</mushBoi>
+		<iceArm>Ice Armor</iceArm>
+		<rusty>Rusty Sword</rusty>
+		<balanced>Balanced Blade</balanced>
+		<spiteS>Spite Sword</spiteS>
+		<assDag>Assassin's Dagger</assDag>
+		<bloodS>Blood Sword</bloodS>
+		<twins>Twin Daggers</twins>
+		<broadS>Broadsword</broadS>
+		<shovel>Shovel</shovel>
+		<cursed>Cursed Sword</cursed>
+		<stiletto>Sadist's Stiletto</stiletto>
+		<swift>Swift Sword</swift>
+		<giantK>Giantkiller</giantK>
+		<shrapnel>Shrapnel Axes</shrapnel>
+		<seismic>Seismic Strike</seismic>
+		<wSpear>War Spear</wSpear>
+		<imp>Impaler</imp>
+		<symLance>Symmetrical Lance</symLance>
+		<rapier>Rapier</rapier>
+		<skewer>Meat Skewer</skewer>
+		<nut>Nutcracker</nut>
+		<spartan>Spartan Sandals</spartan>
+		<spikedB>Spiked Boots</spikedB>
+		<hayaB>Hayabusa Boots</hayaB>
+		<hayaG>Hayabusa Gauntlets</hayaG>
+		<valmont>Valmont's Whip</valmont>
+		<wrenching>Wrenching Whip</wrenching>
+		<oiled>Oiled Sword</oiled>
+		<torch>Torch</torch>
+		<frantic>Frantic Sword</frantic>
+		<flawless>Flawless</flawless>
+		<flint>Flint</flint>
+		<tentacle>Tentacle</tentacle>
+		<pan>Vorpan</pan>
+		<fans>Flashing Fans</fans>
+		<claws>Scythe Claws</claws>
+		<rnb>Rhythm n'Bouzouki</rnb>
+		<crowbar>Crowbar</crowbar>
+		<begBow>Beginner's Bow</begBow>
+		<nocksB>Multiple-nocks Bow</nocksB>
+		<legolas>Bow and Endless Quiver</legolas>
+		<marksman>Marksman's Bow</marksman>
+		<sonic>Sonic Crossbow</sonic>
+		<infB>Infantry Bow</infB>
+		<opBow>Quick Bow</opBow>
+		<iceBow>Ice Bow</iceBow>
+		<heavyX>Heavy Crossbow</heavyX>
+		<repeater>Repeater Crossbow</repeater>
+		<iceX>Ice Crossbow</iceX>
+		<exploX>Explosive Crossbow</exploX>
+		<carbine>Alchemic Carbine</carbine>
+		<boomer>Boomerang</boomer>
+		<hemo>Hemorrhage</hemo>
+		<boyAxe>The Boy's Axe</boyAxe>
+		<javelin>War Javelin</javelin>
+		<hokuto>Hokuto's Bow</hokuto>
+		<nos>Nerves of Steel</nos>
+		<throwK>Throwing Knife</throwK>
+		<eWhip>Electric Whip</eWhip>
+		<firebrands>Firebrands</firebrands>
+		<shards>Ice Shards</shards>
+		<pyro>Pyrotechnics</pyro>
+		<palpatine>Lightning Bolt</palpatine>
+		<fireB>Fire blast</fireB>
+		<frostB>Frost Blast</frostB>
+		<missiles>Magic missiles</missiles>
+		<blowgun>Blowgun</blowgun>
+		<planks>Old Wooden Shield</planks>
+		<frontline>Front Line Shield</frontline>
+		<cudgel>Cudgel</cudgel>
+		<punishment>Punishment</punishment>
+		<yeeter>Knockback Shield</yeeter>
+		<opShield>Rampart</opShield>
+		<assShield>Assault Shield</assShield>
+		<thirstyS>Bloodthirsty Shield</thirstyS>
+		<greed>Greed Shield</greed>
+		<spikedS>Spiked Shield</spikedS>
+		<buckler>Parry Shield</buckler>
+		<forceS>Force Shield</forceS>
+		<thunder>Thunder Shield</thunder>
+		<iceShield>Ice Shield</iceShield>
+	</items>
+</lang>

@@ -2,22 +2,14 @@
 <outfit_list>
 	<outfit>
 		<internal_name>classicO</internal_name>
-		<lang_en>Classic Outfit</lang_en>
-		<lang_fr></lang_fr>
 	</outfit>
 	<outfit>
 		<internal_name>goldenO</internal_name>
-		<lang_en>Golden Outfit</lang_en>
-		<lang_fr></lang_fr>
 	</outfit>
 	<outfit>
 		<internal_name>legWarO</internal_name>
-		<lang_en>Legendary Warrior's Outfit</lang_en>
-		<lang_fr></lang_fr>
 	</outfit>
 	<outfit>
 		<internal_name>ninja</internal_name>
-		<lang_en>Ninja Outfit</lang_en>
-		<lang_fr></lang_fr>
 	</outfit>
 </outfit_list>

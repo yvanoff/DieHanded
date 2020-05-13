@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang>
+	<outfits>
+		<classicO>Tenue Classique</classicO>
+		<goldenO>Tenue dorée</goldenO>
+		<legWarO>Tenue du guerrier légendaire</legWarO>
+		<ninja>Tenue de ninja</ninja>
+	</outfits>
+	<stats>
+		<brut>Brutalité</brut>
+		<tact>Tactiques</tact>
+		<surv>Survie</surv>
+	</stats>
+	<runes>
+		<vine>Rune des vignes</vine>
+		<tp>Rune de téléportation</tp>
+		<ram>Rune du Bélier</ram>
+		<spider>Rune de l'Araignée</spider>
+	</runes>
+	<diets>
+		<carn>Carnivore</carn>
+		<castlev>Castlevaniesque</castlev>
+		<veggie>Végétarien</veggie>
+		<fruit>Frugivore</fruit>
+		<mobFood>Monstrueux</mobFood>
+		<bagu>Baguette</bagu>
+		<hl2>Half-Life</hl2>
+	</diets>
+	<biomes>
+		<pq>Quartier des prisonniers</pq>
+		<prom>Promenade des condamnés</prom>
+		<toxicS>Egouts toxiques</toxicS>
+		<greenhouse>Serre</greenhouse>
+		<depths>Profondeurs de la Prison</depths>
+		<corrPris>Prison corrompue</corrPris>
+		<roof>Toits de la Prison</roof>
+		<oss>Charnier</oss>
+		<ancientS>Ancien réseau d'égouts</ancientS>
+		<morass>Marais</morass>
+		<conc>Le Concierge</conc>
+		<conj>Conjonctivius</conj>
+		<mama>Maman Tique</mama>
+		<stilt>Gué des Brumes</stilt>
+		<sanct>Sanctuaire endormi</sanct>
+		<graves>Cimetière du Val</graves>
+		<ct>Tour de l'Horloge</ct>
+		<sep>Sépulcre oublié</sep>
+		<cavern>Caverne</cavern>
+		<tk>La Gardienne du Temps</tk>
+		<giant>Le Gigantus</giant>
+		<astro>Astrolab</astro>
+		<hotk>La Main du Roi</hotk>
+		<castle>Château de Haute-Cime</castle>
+		<spoilerBoy>Le Collecteur</spoilerBoy>
+	</biomes>
+	<muts>
+		<yolo>Ygdar Orus Li Ox !</yolo>
+		<killerI>Inspiration meutrière</killerI>
+		<combo>Enchaînement</combo>
+		<vengeance>Vengeance</vengeance>
+		<meleeMut>Mélée</meleeMut>
+		<opWo>Blessures ouvertes</opWo>
+		<tainted>Soin corrompu</tainted>
+		<solRes>Endurance guerrière</solRes>
+		<berz>Berserker</berz>
+		<adren>Adrénaline</adren>
+		<frzy>Frénésie</frzy>
+		<hunterI>Inspiration du chasseur</hunterI>
+		<support>Soutien</support>
+		<pGift>Cadeau de départ</pGift>
+		<tranq>Tranquilité</tranq>
+		<jack>Arrachage</jack>
+		<scheme>Planification</scheme>
+		<init>Initiative</init>
+		<alien>Prédateur</alien>
+		<network>Réseautage</network>
+		<crowFoot>Chausse-trape</crowFoot>
+		<retreat>Retraite stratégique</retreat>
+		<faith>Inspiration inébranlable</faith>
+		<counterMut>Contre-attaque</counterMut>
+		<wdkm>Encaissement</wdkm>
+		<necro>Nécromancie</necro>
+		<xtended>Soin prolongé</xtended>
+		<gastro>Gastronomie</gastro>
+		<spiteMut>Vindicte</spiteMut>
+		<frostbite>Engelures</frostbite>
+		<hoI>Coeur de glace</hoI>
+		<moA>Inspiration du maître d'armes</moA>
+		<ammo>Munitions</ammo>
+		<recover>Récupération</recover>
+		<triage>Soin d'urgence</triage>
+		<deadI>Mort à l'intérieur</deadI>
+		<alienation>Aliénation</alienation>
+		<acceptance>Acceptation</acceptance>
+		<maso>Maso</maso>
+		<diseng>Désengagement</diseng>
+	</muts>
+	<items>
+		<crossbo>Auto-balète double</crossbo>
+		<sinew>Tranche-ligaments</sinew>
+		<heavyT>Tourelle lourde</heavyT>
+		<barnacle>Bernacle</barnacle>
+		<flameT>Tourelle lance-flammes</flameT>
+		<cleaver>Hachoir</cleaver>
+		<wolfT>Piège à loups</wolfT>
+		<crusher>Ecraseur</crusher>
+		<decoy>Leurre explosif</decoy>
+		<eDoor>Porte Hâtive</eDoor>
+		<opNade>Grenade puissante</opNade>
+		<infNade>Grenade d'infanterie</infNade>
+		<clusNade>Grappe explosive</clusNade>
+		<magNade>Grenade magnétique</magNade>
+		<stunNade>Grenade étourdissante</stunNade>
+		<iceNade>Bombe givrante</iceNade>
+		<fireNade>Bombe incendiaire</fireNade>
+		<rootNade>Bombe de lière</rootNade>
+		<oilNade>Bombe à huile</oilNade>
+		<swarm>Nuée</swarm>
+		<deathOrb>Orbe de mort</deathOrb>
+		<tornado>Tornade</tornado>
+		<kDance>Danse des couteaux</kDance>
+		<politics>Puissance corrompue</politics>
+		<tonic>Tonique</tonic>
+		<hook>Grappin</hook>
+		<phaser>Déphasage</phaser>
+		<temp>Distorsion temporelle</temp>
+		<fart>Nuage corrosif</fart>
+		<lacAura>Aura de lacération</lacAura>
+		<wod>Onde de déni</wod>
+		<wings>Ailes de Corbeau</wings>
+		<youkool>Grand-duc de combat</youkool>
+		<speedrun>Assault</speedrun>
+		<whistle>Sifflet du géant</whistle>
+		<telluric>Impact Tellurique</telluric>
+		<beyblade>Seringue du Collecteur</beyblade>
+		<smoke>Fumigène</smoke>
+		<mushBoi>Champignon protecteur</mushBoi>
+		<iceArm>Armure de glace</iceArm>
+		<rusty>Epée rouillée</rusty>
+		<balanced>Epée équilibrée</balanced>
+		<spiteS>Désespoir</spiteS>
+		<assDag>Dague d'assassin</assDag>
+		<bloodS>Bain de sang</bloodS>
+		<twins>Dagues jumelles</twins>
+		<broadS>Epée large</broadS>
+		<shovel>Pelle</shovel>
+		<cursed>Epée maudite</cursed>
+		<stiletto>Dague de culte sadiste</stiletto>
+		<swift>Epée de promptitude</swift>
+		<giantK>Tueuse de géants</giantK>
+		<shrapnel>Lame à fragmentation</shrapnel>
+		<seismic>Frappe sismique</seismic>
+		<wSpear>Lance de guerre</wSpear>
+		<imp>Empaleuse</imp>
+		<symLance>Lance symétrique</symLance>
+		<rapier>Rapière</rapier>
+		<skewer>Perce-carne</skewer>
+		<nut>Casse noisettes</nut>
+		<spartan>Sandales de spartiate</spartan>
+		<spikedB>Bottes cloutées</spikedB>
+		<hayaB>Bottes de Hayabusa</hayaB>
+		<hayaG>Gantelets de Hayabusa</hayaG>
+		<valmont>Fouet de Valmont</valmont>
+		<wrenching>Fouet d'entrave</wrenching>
+		<oiled>Epée huileuse</oiled>
+		<torch>Torche</torch>
+		<frantic>Charognarde</frantic>
+		<flawless>Perfection</flawless>
+		<flint>Silex</flint>
+		<tentacle>Bras tentacule</tentacle>
+		<pan>Vorpoêle</pan>
+		<fans>Eventails</fans>
+		<claws>Faux-griffes</claws>
+		<rnb>Oud</rnb>
+		<crowbar>Pied-de-biche</crowbar>
+		<begBow>Arc du fils de geolier</begBow>
+		<nocksB>Arc à multiples encoches</nocksB>
+		<legolas>Arc et carquois sans fond</legolas>
+		<marksman>Arc de tireur d'élite</marksman>
+		<sonic>Carabine sonique</sonic>
+		<infB>Arc de fantassin</infB>
+		<opBow>Arc rapide</opBow>
+		<iceBow>Arc de glace</iceBow>
+		<heavyX>Arbalète lourde</heavyX>
+		<repeater>Arbalète à répétition</repeater>
+		<iceX>Arbalète de glace</iceX>
+		<exploX>Arbalète explosive</exploX>
+		<carbine>Pistolet alchimique</carbine>
+		<boomer>Boomerang</boomer>
+		<hemo>Ventrèche</hemo>
+		<boyAxe>Hache de Boï</boyAxe>
+		<javelin>Javelot de guerre</javelin>
+		<hokuto>Arc du Hokuto</hokuto>
+		<nos>Nerfs d'acier</nos>
+		<throwK>Couteau de lancer</throwK>
+		<eWhip>Fouet électrique</eWhip>
+		<firebrands>Torches de lancer</firebrands>
+		<shards>Eclats de glace</shards>
+		<pyro>Pyrotechnie</pyro>
+		<palpatine>Eclair</palpatine>
+		<fireB>Lance-flammes</fireB>
+		<frostB>Congélation</frostB>
+		<missiles>Missiles magiques</missiles>
+		<blowgun>Sarbacane</blowgun>
+		<planks>Vieux bouclier en bois</planks>
+		<frontline>Bouclier de première ligne</frontline>
+		<cudgel>Assomoir</cudgel>
+		<punishment>Punition</punishment>
+		<yeeter>Bouclier de dégagement</yeeter>
+		<opShield>Rempart</opShield>
+		<assShield>Bouclier d'assaut</assShield>
+		<thirstyS>Bouclier sanguinaire</thirstyS>
+		<greed>Bouclier de cupidité</greed>
+		<spikedS>Bouclier à pointes</spikedS>
+		<buckler>Bouclier de contre</buckler>
+		<forceS>Bubulle</forceS>
+		<thunder>Bouclier foudroyant</thunder>
+		<iceShield>Bouclier glaçant</iceShield>
+	</items>
+</lang>

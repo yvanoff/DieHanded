@@ -2,202 +2,122 @@
 <mut_list>
 	<mut>
 		<internal_name>yolo</internal_name>
-		<lang_en>Ygdar Orus Li Ox!</lang_en>
-		<lang_fr>Ygdar Orus Li Ox !</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>killerI</internal_name>
-		<lang_en>Killer instinct</lang_en>
-		<lang_fr>Inspiration meutrière</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>combo</internal_name>
-		<lang_en>Combo</lang_en>
-		<lang_fr>Enchaînement</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>vengeance</internal_name>
-		<lang_en>Vengeance</lang_en>
-		<lang_fr>Vengeance</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>meleeMut</internal_name>
-		<lang_en>Melee</lang_en>
-		<lang_fr>Mélée</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>opWo</internal_name>
-		<lang_en>Open wounds</lang_en>
-		<lang_fr>BLessures ouvertes</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>tainted</internal_name>
-		<lang_en>Tainted Flask</lang_en>
-		<lang_fr>Soin corrompu</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>solRes</internal_name>
-		<lang_en>Soldier resistance</lang_en>
-		<lang_fr>Endurance guerrière</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>berz</internal_name>
-		<lang_en>Berserker</lang_en>
-		<lang_fr>Barserker</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>adren</internal_name>
-		<lang_en>Adrenalin</lang_en>
-		<lang_fr>Adrénaline</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>frzy</internal_name>
-		<lang_en>Frenzy</lang_en>
-		<lang_fr>Frénésie</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>hunterI</internal_name>
-		<lang_en>Hunter's instinct</lang_en>
-		<lang_fr>Inspiration du chasseur</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>support</internal_name>
-		<lang_en>Support</lang_en>
-		<lang_fr>Soutien</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>pGift</internal_name>
-		<lang_en>Parting Gift</lang_en>
-		<lang_fr>Cadeau de départ</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>tranq</internal_name>
-		<lang_en>Tranquility</lang_en>
-		<lang_fr>Tranquilité</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>jack</internal_name>
-		<lang_en>Ripper</lang_en>
-		<lang_fr>Arrachage</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>scheme</internal_name>
-		<lang_en>Scheme</lang_en>
-		<lang_fr>Planification</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>init</internal_name>
-		<lang_en>Initiative</lang_en>
-		<lang_fr>Initiative</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>alien</internal_name>
-		<lang_en>Predator</lang_en>
-		<lang_fr>Prédateur</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>network</internal_name>
-		<lang_en>Networking</lang_en>
-		<lang_fr>Réseautage</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>crowFoot</internal_name>
-		<lang_en>Crow's foot</lang_en>
-		<lang_fr>Chausse-trape</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>retreat</internal_name>
-		<lang_en>Tactical Retreat</lang_en>
-		<lang_fr>Retraite stratégique</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>faith</internal_name>
-		<lang_en>Blind Faith</lang_en>
-		<lang_fr>Inspiration inébranlable</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>counterMut</internal_name>
-		<lang_en>Counterattack</lang_en>
-		<lang_fr>Contre-attaque</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>wdkm</internal_name>
-		<lang_en>What Doesn't Kill Me</lang_en>
-		<lang_fr>Encaissement</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>necro</internal_name>
-		<lang_en>Necromancy</lang_en>
-		<lang_fr>Nécromancie</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>xtended</internal_name>
-		<lang_en>Extended Healing</lang_en>
-		<lang_fr>Soin prolongé</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>gastro</internal_name>
-		<lang_en>Gastronomy</lang_en>
-		<lang_fr>Gastronomie</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>spiteMut</internal_name>
-		<lang_en>Spite</lang_en>
-		<lang_fr>Vindicte</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>frostbite</internal_name>
-		<lang_en>Frostbite</lang_en>
-		<lang_fr>Engelures</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>hoI</internal_name>
-		<lang_en>Heart of Ice</lang_en>
-		<lang_fr>Coeur de glace</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>moA</internal_name>
-		<lang_en>Instinct of the Master of Arms</lang_en>
-		<lang_fr>Inspiration du maître d'armes</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>ammo</internal_name>
-		<lang_en>Ammo</lang_en>
-		<lang_fr>Munitions</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>recover</internal_name>
-		<lang_en>Recovery</lang_en>
-		<lang_fr>Récupération</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>triage</internal_name>
-		<lang_en>Emergency Triage</lang_en>
-		<lang_fr>Soin d'urgence</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>deadI</internal_name>
-		<lang_en>Dead Inside</lang_en>
-		<lang_fr>Mort à l'intérieur</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>alienation</internal_name>
-		<lang_en>Alienation</lang_en>
-		<lang_fr>Aliénation</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>acceptance</internal_name>
-		<lang_en>Acceptance</lang_en>
-		<lang_fr>Acceptantion</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>maso</internal_name>
-		<lang_en>Masochist</lang_en>
-		<lang_fr>Maso</lang_fr>
 	</mut>
 	<mut>
 		<internal_name>diseng</internal_name>
-		<lang_en>Disengagement</lang_en>
-		<lang_fr>Désengagement</lang_fr>
 	</mut>
 </mut_list>

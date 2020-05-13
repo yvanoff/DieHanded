@@ -11,13 +11,11 @@ class basicData
 {
 public:
     basicData() = default;
-    basicData(std::string const& interName, std::string const& displayName);
+    basicData(std::string const& interName);
     ~basicData();
-    std::string getDisplayName();
     std::string getInternName();
 
 private:
     std::string internal_name;
-    std::string display_name;
 };
 

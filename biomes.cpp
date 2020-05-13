@@ -24,9 +24,9 @@ std::string Transition::getName()
     return exit_name;
 }
 
-Biome::Biome(std::string const& interName, std::string const& displayName)
+Biome::Biome(std::string const& interName)
 {
-    biomeData = basicData(interName, displayName);
+    biomeData = basicData(interName);
 }
 
 Biome::~Biome()
@@ -46,11 +46,6 @@ void Biome::clearExits()
 std::vector<Transition*> Biome::getExits()
 {
     return exits;
-}
-
-std::string Biome::getDisplayName()
-{
-    return biomeData.getDisplayName();
 }
 
 std::string Biome::getInternName()

@@ -7,7 +7,9 @@
     "lang": "en",
     "temporal": false,
     "starter_weapons": false,
-    "colorless": false,
+    "colorless_gear": false,
+    "colorless_muts": false,
+    "dual_wielding" :  false,
     "vine_rune": true,
     "tp_rune": true,
     "ram_rune": true,
@@ -16,7 +18,7 @@
     "draw_gear_first": true,
     "nb_max_muts": 3,
     "benchmarking_mode": true,
-    "nb_tests_benchmark": 10000,
-    "output_file": "benchmarks_results/results-5-1111-R11.txt"
+    "nb_tests_benchmark": 2500,
+    "output_file": "results.txt"
   }
 }

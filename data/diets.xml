@@ -2,37 +2,23 @@
 <diet_list>
 	<diet>
 		<internal_name>carn</internal_name>
-		<lang_en>Carnivore</lang_en>
-		<lang_fr>Carnivore</lang_fr>
 	</diet>
 	<diet>
 		<internal_name>castlev</internal_name>
-		<lang_en>Castlevaniesque</lang_en>
-		<lang_fr>Castlevaniesque</lang_fr>
 	</diet>
 	<diet>
 		<internal_name>veggie</internal_name>
-		<lang_en>Vegetarian</lang_en>
-		<lang_fr>Végétarien</lang_fr>
 	</diet>
 	<diet>
 		<internal_name>fruit</internal_name>
-		<lang_en>Fruitarian</lang_en>
-		<lang_fr>Frugivore</lang_fr>
 	</diet>
 	<diet>
 		<internal_name>mobFood</internal_name>
-		<lang_en>Monster</lang_en>
-		<lang_fr>Monstrueux</lang_fr>
 	</diet>
 	<diet>
 		<internal_name>bagu</internal_name>
-		<lang_en>Baguette</lang_en>
-		<lang_fr>Baguette</lang_fr>
 	</diet>
 	<diet>
 		<internal_name>hl2</internal_name>
-		<lang_en>Half-Life</lang_en>
-		<lang_fr>Half-Life</lang_fr>
 	</diet>
 </diet_list>

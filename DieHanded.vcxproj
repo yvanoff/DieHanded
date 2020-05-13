@@ -105,15 +105,21 @@
   <ItemGroup>
     <ClCompile Include="basicData.cpp" />
     <ClCompile Include="biomes.cpp" />
+    <ClCompile Include="build.cpp" />
     <ClCompile Include="D:\Documents\pugixml-1.10\src\pugixml.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="gear.cpp" />
+    <ClCompile Include="mut.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basicData.h" />
     <ClInclude Include="biomes.h" />
+    <ClInclude Include="build.h" />
     <ClInclude Include="D:\Documents\pugixml-1.10\src\pugiconfig.hpp" />
     <ClInclude Include="D:\Documents\pugixml-1.10\src\pugixml.hpp" />
+    <ClInclude Include="gear.h" />
     <ClInclude Include="json.hpp" />
+    <ClInclude Include="mut.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +133,8 @@
     <Xml Include="data\outfits.xml" />
     <Xml Include="data\runes.xml" />
     <Xml Include="data\stats.xml" />
+    <Xml Include="lang\en.xml" />
+    <Xml Include="lang\fr.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="params.json" />
