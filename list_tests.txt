@@ -1,0 +1,161 @@
+crossbo, tact, skill, deployed
+sinew, tact, skill, bleed, deployed
+heavyT, tact, skill, deployed
+barnacle, tact, skill, deployed
+flameT, brut, tact, skill, burn, deployed
+cleaver, brut, tact, skill, bleed, deployed
+wolfT, tact, surv, skill, deployed
+crusher, tact, surv, skill, deployed
+decoy, tact, skill, deployed
+eDoor, tact, skill, stun, deployed
+opNade, brut, surv, skill
+infNade, brut, skill
+clusNade, brut, skill
+magNade, brut, tact, skill
+stunNade, surv, tact, skill, stun
+iceNade, tact, surv, skill, ice
+fireNade, brut, skill, burn
+rootNade, tact, surv, skill, root
+oilNade, brut, tact, skill, oil
+swarm, brut, surv, skill, dot
+deathOrb, surv, skill
+tornado, tact, skill
+kDance, brut, tact, skill, bleed
+politics, brut, tact, skill
+vampirism, brut, surv, skill
+tonic, surv, skill
+hook, brut, tact, skill, short
+phaser, brut, tact, skill, short
+temp, tact, skill
+fart, brut, tact, skill, bleed, poison
+lacAura, brut, tact, skill
+wod, tact, skill
+wings, tact, skill
+youkool, tact, skill
+speedrun, brut, tact, skill
+whistle, surv, skill
+telluric, brut, surv, skill
+beyblade, brut, surv, skill, melee
+smoke, tact, skill, melee
+mushBoi, surv, skill
+iceArm, surv, skill, ice
+rusty, brut, main, melee
+balanced, brut, main, melee, crits
+spiteS, brut, main, melee, crits
+assDag, brut, tact, main, melee, crits
+bloodS, brut, main, bleed, melee
+twins, brut, main, melee, crits
+broadS, brut, surv, main, melee, crits
+shovel, brut, surv, main, melee
+cursed, brut, tact, main, melee
+stiletto, brut, tact, main, bleed, poison, melee, crits
+swift, brut, main, melee, crits
+giantK, brut, surv, main, melee, crits
+shrapnel, brut, tact, main, melee, crits, ammo
+seismic, brut, surv, main, root, melee
+wSpear, brut, surv, main, melee, crits
+imp, brut, main, melee, crits
+symLance, brut, surv, main, melee, crits
+rapier, brut, main, melee, crits
+skewer, brut, tact, main, melee, crits
+nut, brut, surv, main, ice, stun, root, melee, crits
+spartan, brut, main, melee
+spikedB, brut, main, melee, crits
+hayaB, brut, main, melee
+hayaG, brut, main, melee, crits
+valmont, brut, tact, main, long, melee, crits
+wrenching, brut, main, melee, crits
+oiled, brut, main, burn, oil, melee, crits
+torch, brut, main, burn, melee
+frantic, brut, tact, main, melee, crits
+flawless, brut, surv, main, melee, crits
+flint, brut, surv, main, melee, crits
+tentacle, brut, tact, main, long, melee, crits
+pan, brut, main, melee, crits
+fans, brut, tact, main, melee, crits
+claws, surv, main, melee, crits, dual_wields
+rnb, brut, surv, main, melee, crits
+crowbar, brut, tact, main, melee, crits
+begBow, tact, main, ammo
+nocksB, tact, surv, main, ammo
+legolas, tact, main, crits
+marksman, tact, surv, main, long, ammo, crits
+sonic, tact, main, crits
+infB, brut, tact, main, short, crits, ammo
+opBow, tact, main, crits, ammo
+iceBow, tact, surv, offhand, ice, ammo
+heavyX, tact, surv, main, ammo
+repeater, tact, surv, main, crits, ammo
+iceX, tact, surv, main, ice, crits, ammo
+exploX, tact, surv, main, crits
+carbine, brut, tact, offhand, poison
+boomer, tact, surv, main
+hemo, tact, surv, main, crits, ammo
+boyAxe, brut, tact, offhand, root, crits
+javelin, tact, surv, offhand
+hokuto, brut, tact, main, offhand, bleed, burn, poison, dot, ammo
+nos, tact, surv, main, crits, ammo
+throwK, brut, tact, offhand, bleed, ammo
+eWhip, brut, tact, main
+firebrands, brut, tact, offhand, burn
+shards, brut, tact, offhand, oil, slow, crits
+pyro, tact, main, oil, burn, crits
+palpatine, tact, main, crits
+fireB, brut, tact, main, oil, burn, crits
+frostB, tact, surv, offhand, ice
+missiles, tact, main
+blowgun, tact, main, crits, ammo
+planks, surv, shield, crits
+frontline, brut, surv, shield, melee, crits
+cudgel, surv, shield, stun, crits
+punishment, surv, shield, crits
+yeeter, tact, surv, shield, long, crits
+opShield, surv, shield, crits
+assShield, surv, shield, crits
+thirstyS, brut, surv, shield, bleed, crits
+greed, surv, shield, crits
+spikedS, surv, shield, crits
+buckler, tact, surv, shield, crits
+forceS, surv, shield, crits
+thunder, tact, surv, shield, dot, crits
+iceShield, surv, shield, ice, crits
+yolo, colorless
+killerI, brut and:  | melee
+combo, brut
+vengeance, brut
+meleeMut, brut and:  | melee
+opWo, brut and:  | melee
+tainted, brut
+solRes, brut
+berz, brut and:  | melee
+adren, brut and:  | melee
+frzy, brut and:  | melee
+hunterI, tact and:  | ranged
+support, tact and:  | deployed
+pGift, tact and:  | ranged
+tranq, tact and:  | long
+jack, tact and:  | melee and:  | ammo
+scheme, tact and:  | melee
+init, tact and:  | melee
+alien, tact and:  | melee
+network, tact and:  | ammo
+crowFoot, tact
+retreat, tact
+faith, surv and:  | shield
+counterMut, surv and:  | shield
+wdkm, surv and:  | shield
+necro, surv
+xtended, surv
+gastro, surv
+spiteMut, surv and:  | shield
+frostbite, surv and:  | ice | slow
+hoI, surv and:  | melee and:  | ice | slow | root
+moA, colorless and:  | crits
+ammo, colorless and:  | ammo
+recover, colorless
+triage, colorless
+deadI, colorless
+alienation, colorless
+acceptance, colorless
+maso, colorless
+diseng, colorless

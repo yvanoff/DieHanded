@@ -4,33 +4,33 @@
 		<internal_name>crossbo</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>sinew</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
 		<enables>bleed</enables>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>heavyT</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>barnacle</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>flameT</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 		<enables>burn</enables>
 	</gear>
 	<gear>
@@ -38,7 +38,7 @@
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 		<enables>bleed</enables>
 	</gear>
 	<gear>
@@ -46,26 +46,26 @@
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>crusher</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>decoy</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 	</gear>
 	<gear>
 		<internal_name>eDoor</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<skill_kind>deployed</skill_kind>
+		<special>deployed</special>
 		<enables>stun</enables>
 	</gear>
 	<gear>
@@ -170,14 +170,14 @@
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<range_req>short</range_req>
+		<requires>short</requires>
 	</gear>
 	<gear>
 		<internal_name>phaser</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<range_req>short</range_req>
+		<requires>short</requires>
 	</gear>
 	<gear>
 		<internal_name>temp</internal_name>
@@ -235,13 +235,13 @@
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>skill</type>
-		<range>melee</range>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>smoke</internal_name>
 		<scaling>tact</scaling>
 		<type>skill</type>
-		<range_req>melee</range_req>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>mushBoi</internal_name>
@@ -258,73 +258,73 @@
 		<internal_name>rusty</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>balanced</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>spiteS</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>assDag</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>bloodS</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 		<enables>bleed</enables>
 	</gear>
 	<gear>
 		<internal_name>twins</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>broadS</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>shovel</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>cursed</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>stiletto</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 		<requires>bleed</requires>
 		<requires>poison</requires>
 	</gear>
@@ -332,32 +332,32 @@
 		<internal_name>swift</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>giantK</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>shrapnel</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>melee</special>
+		<special>crits</special>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>seismic</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 		<enables>root</enables>
 	</gear>
 	<gear>
@@ -365,46 +365,46 @@
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>imp</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>symLance</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>rapier</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>skewer</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>nut</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 		<requires>ice</requires>
 		<requires>stun</requires>
 		<requires>root</requires>
@@ -413,50 +413,50 @@
 		<internal_name>spartan</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>spikedB</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>hayaB</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 	</gear>
 	<gear>
 		<internal_name>hayaG</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>valmont</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
-		<range_effective>long</range_effective>
+		<special>melee</special>
+		<special>crits</special>
+		<enables>long</enables>
 	</gear>
 	<gear>
 		<internal_name>wrenching</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>oiled</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 		<enables>oil</enables>
 		<requires>burn</requires>
 	</gear>
@@ -464,7 +464,7 @@
 		<internal_name>torch</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
+		<special>melee</special>
 		<enables>burn</enables>
 	</gear>
 	<gear>
@@ -472,129 +472,129 @@
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>flawless</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>flint</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>tentacle</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
-		<range_effective>long</range_effective>
+		<special>melee</special>
+		<special>crits</special>
+		<enables>long</enables>
 	</gear>
 	<gear>
 		<internal_name>pan</internal_name>
 		<scaling>brut</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>fans</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>claws</internal_name>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
-		<use_type>dual_wields</use_type>
+		<special>melee</special>
+		<special>crits</special>
+		<special>dual_wields</special>
 	</gear>
 	<gear>
 		<internal_name>rnb</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>crowbar</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<range>melee</range>
-		<has>crits</has>
+		<special>melee</special>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>begBow</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>ammo</has>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>nocksB</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>ammo</has>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>legolas</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>marksman</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>ammo</has>
-		<has>crits</has>
-		<range_effective>long</range_effective>
+		<special>ammo</special>
+		<special>crits</special>
+		<enables>long</enables>
 	</gear>
 	<gear>
 		<internal_name>sonic</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>infB</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
-		<range_effective>short</range_effective>
+		<special>crits</special>
+		<special>ammo</special>
+		<enables>short</enables>
 	</gear>
 	<gear>
 		<internal_name>opBow</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>crits</special>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>iceBow</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>offhand</type>
-		<has>ammo</has>
+		<special>ammo</special>
 		<enables>ice</enables>
 	</gear>
 	<gear>
@@ -602,23 +602,23 @@
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>ammo</has>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>repeater</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>crits</special>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>iceX</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>crits</special>
+		<special>ammo</special>
 		<enables>ice</enables>
 	</gear>
 	<gear>
@@ -626,7 +626,7 @@
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>carbine</internal_name>
@@ -646,15 +646,15 @@
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>crits</special>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>boyAxe</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>offhand</type>
-		<has>crits</has>
+		<special>crits</special>
 		<enables>root</enables>
 	</gear>
 	<gear>
@@ -669,7 +669,7 @@
 		<scaling>tact</scaling>
 		<type>main</type>
 		<type>offhand</type>
-		<has>ammo</has>
+		<special>ammo</special>
 		<requires>bleed</requires>
 		<requires>burn</requires>
 		<requires>poison</requires>
@@ -680,15 +680,15 @@
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>crits</special>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>throwK</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>offhand</type>
-		<has>ammo</has>
+		<special>ammo</special>
 		<enables>bleed</enables>
 	</gear>
 	<gear>
@@ -709,7 +709,7 @@
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>offhand</type>
-		<has>crits</has>
+		<special>crits</special>
 		<requires>oil</requires>
 		<enables>slow</enables>
 	</gear>
@@ -717,7 +717,7 @@
 		<internal_name>pyro</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
+		<special>crits</special>
 		<requires>oil</requires>
 		<enables>burn</enables>
 	</gear>
@@ -725,14 +725,14 @@
 		<internal_name>palpatine</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>fireB</internal_name>
 		<scaling>brut</scaling>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
+		<special>crits</special>
 		<requires>oil</requires>
 		<enables>burn</enables>
 	</gear>
@@ -752,102 +752,102 @@
 		<internal_name>blowgun</internal_name>
 		<scaling>tact</scaling>
 		<type>main</type>
-		<has>crits</has>
-		<has>ammo</has>
+		<special>crits</special>
+		<special>ammo</special>
 	</gear>
 	<gear>
 		<internal_name>planks</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>frontline</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
-		<buffs>melee</buffs>
+		<special>crits</special>
+		<requires>melee</requires>
 	</gear>
 	<gear>
 		<internal_name>cudgel</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 		<enables>stun</enables>
 	</gear>
 	<gear>
 		<internal_name>punishment</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>yeeter</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
-		<range_req>long</range_req>
+		<special>crits</special>
+		<requires>long</requires>
 	</gear>
 	<gear>
 		<internal_name>opShield</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>assShield</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>thirstyS</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 		<enables>bleed</enables>
 	</gear>
 	<gear>
 		<internal_name>greed</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>spikedS</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>buckler</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>forceS</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>thunder</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 		<enables>dot</enables>
 	</gear>
 	<gear>
 		<internal_name>iceShield</internal_name>
 		<scaling>surv</scaling>
 		<type>shield</type>
-		<has>crits</has>
+		<special>crits</special>
 		<enables>ice</enables>
 	</gear>
 </gear_list>

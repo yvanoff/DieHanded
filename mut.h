@@ -5,11 +5,13 @@ class Mutation
 {
 public:
     Mutation() = default;
-    //Mutation();
+    Mutation(std::string name, std::vector<std::vector<std::string>> gameplayMod);
+    Mutation(std::string name, std::vector<std::vector<std::string>> gameplayMod, std::string mutScales);
     ~Mutation();
+    std::string mutToString();
 
 private:
     std::string internalName;
-    std::string displayName;
-    std::vector<std::string> requiredGameplay;
+    std::string scaling;
+    std::vector<std::vector<std::string>> requiredGameplay;
 };

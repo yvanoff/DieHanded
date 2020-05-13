@@ -9,4 +9,7 @@
 	<stat>
 		<internal_name>surv</internal_name>
 	</stat>
+	<stat>
+		<internal_name>colorless</internal_name>
+	</stat>
 </stat_list>

@@ -7,12 +7,14 @@ class Build
 {
 public:
     Build() = default;
-    //Build();
+    Build();
     ~Build();
     void addGear(Gear gearToAdd);
     void addMut(Mutation mutToAdd);
     bool isWeaponCompatible(Gear gearToTest);
     bool isMutCompatible(Mutation mutToTest);
+    std::vector<std::string> gearToVec();
+    std::vector<std::string> mutsToVec();
 
 private:
     int nbWeapons;

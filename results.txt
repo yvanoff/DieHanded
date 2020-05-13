@@ -1,25 +1,14 @@
-Prisoners' Quarters: 1
-Ramparts: 0.3628
-Promenade of the Condemned: 0.3332
-Forgotten Sepulcher: 0.4372
-Corrupted Prison: 0.112
-Toxic Sewers: 0.3464
-The Dilapidated Arboretum: 0.3204
-Prison Depths: 0.1884
-Ossuary: 0.1596
-Ancient Sewers: 0.2136
-The Morass of the Banished: 0.264
-The Concierge: 0.3408
-The Time Keeper: 0.4948
-Conjunctivius: 0.3952
-Mama Tick: 0.264
-High Peak Castle: 0.7456
-Stilt Village: 0.2956
-The Collector: 1
-Slumbering Sanctuary: 0.3752
-Graveyard: 0.3292
-Clock Tower: 0.2784
-Cavern: 0.2844
-The Giant: 0.5052
-Astrolab: 1
-The Hand of the King: 1
+Diet: Baguette
+Statistic chosen: Tactics
+Run:
+Prisoners' Quarters
+The Dilapidated Arboretum
+Ramparts
+The Concierge
+Stilt Village
+Forgotten Sepulcher
+The Time Keeper
+High Peak Castle
+The Hand of the King
+Astrolab
+The Collector

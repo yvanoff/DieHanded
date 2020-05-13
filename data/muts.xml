@@ -2,122 +2,286 @@
 <mut_list>
 	<mut>
 		<internal_name>yolo</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>killerI</internal_name>
+		<scaling>brut</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>combo</internal_name>
+		<scaling>brut</scaling>
 	</mut>
 	<mut>
 		<internal_name>vengeance</internal_name>
+		<scaling>brut</scaling>
 	</mut>
 	<mut>
 		<internal_name>meleeMut</internal_name>
+		<scaling>brut</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>opWo</internal_name>
+		<scaling>brut</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>tainted</internal_name>
+		<scaling>brut</scaling>
 	</mut>
 	<mut>
 		<internal_name>solRes</internal_name>
+		<scaling>brut</scaling>
 	</mut>
 	<mut>
 		<internal_name>berz</internal_name>
+		<scaling>brut</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>adren</internal_name>
+		<scaling>brut</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>frzy</internal_name>
+		<scaling>brut</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>hunterI</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>ranged</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>support</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>deployed</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>pGift</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>ranged</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>tranq</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>long</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>jack</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+			<and>
+				<or>ammo</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>scheme</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>init</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>alien</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>network</internal_name>
+		<scaling>tact</scaling>
+		<requires>
+			<and>
+				<or>ammo</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>crowFoot</internal_name>
+		<scaling>tact</scaling>
 	</mut>
 	<mut>
 		<internal_name>retreat</internal_name>
+		<scaling>tact</scaling>
 	</mut>
 	<mut>
 		<internal_name>faith</internal_name>
+		<scaling>surv</scaling>
+		<requires>
+			<and>
+				<or>shield</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>counterMut</internal_name>
+		<scaling>surv</scaling>
+		<requires>
+			<and>
+				<or>shield</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>wdkm</internal_name>
+		<scaling>surv</scaling>
+		<requires>
+			<and>
+				<or>shield</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>necro</internal_name>
+		<scaling>surv</scaling>
 	</mut>
 	<mut>
 		<internal_name>xtended</internal_name>
+		<scaling>surv</scaling>
 	</mut>
 	<mut>
 		<internal_name>gastro</internal_name>
+		<scaling>surv</scaling>
 	</mut>
 	<mut>
 		<internal_name>spiteMut</internal_name>
+		<scaling>surv</scaling>
+		<requires>
+			<and>
+				<or>shield</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>frostbite</internal_name>
+		<scaling>surv</scaling>
+		<requires>
+			<and>
+				<or>ice</or>
+				<or>slow</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>hoI</internal_name>
+		<scaling>surv</scaling>
+		<requires>
+			<and>
+				<or>melee</or>
+			</and>
+			<and>
+				<or>ice</or>
+				<or>slow</or>
+				<or>root</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>moA</internal_name>
+		<scaling>colorless</scaling>
+		<requires>
+			<and>
+				<or>crits</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>ammo</internal_name>
+		<scaling>colorless</scaling>
+		<requires>
+			<and>
+				<or>ammo</or>
+			</and>
+		</requires>
 	</mut>
 	<mut>
 		<internal_name>recover</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>triage</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>deadI</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>alienation</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>acceptance</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>maso</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 	<mut>
 		<internal_name>diseng</internal_name>
+		<scaling>colorless</scaling>
 	</mut>
 </mut_list>

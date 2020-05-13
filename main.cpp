@@ -12,6 +12,9 @@
 #include "json.hpp"
 #include "basicData.h"
 #include "biomes.h"
+#include "build.h"
+#include "gear.h"
+#include "mut.h"
 
 
 // A function to load data from an XML file
@@ -87,6 +90,91 @@ std::unordered_map<std::string, Biome> loadXML_biomes(int bc_setting, bool vine_
     }
 
     return data_collection;
+}
+
+std::vector<Gear> loadXML_gear(bool colorless_mode = false, bool no_constraints = false)
+{
+    const std::string xml_path = "data/gear.xml";
+    pugi::xml_document xml_data;
+    std::vector<Gear> data_vector;
+    pugi::xml_parse_result load_result = xml_data.load_file(xml_path.c_str());
+    std::vector<std::string> scaling, gearType, requires, enables, gameplayFlags;
+
+    for (pugi::xml_node node = xml_data.child("gear_list").child("gear"); node; node = node.next_sibling("gear"))
+    {
+        if (!colorless_mode)
+        {
+            for (pugi::xml_node node_child = node.child("scaling"); node_child; node_child = node_child.next_sibling("scaling"))
+            {
+                scaling.push_back(node_child.child_value());
+            }
+        }
+        if (!no_constraints)
+        {
+            for (pugi::xml_node node_child = node.child("type"); node_child; node_child = node_child.next_sibling("type"))
+            {
+                gearType.push_back(node_child.child_value());
+            }
+            for (pugi::xml_node node_child = node.child("requires"); node_child; node_child = node_child.next_sibling("requires"))
+            {
+                requires.push_back(node_child.child_value());
+            }
+            for (pugi::xml_node node_child = node.child("enables"); node_child; node_child = node_child.next_sibling("enables"))
+            {
+                enables.push_back(node_child.child_value());
+            }
+            for (pugi::xml_node node_child = node.child("special"); node_child; node_child = node_child.next_sibling("special"))
+            {
+                gameplayFlags.push_back(node_child.child_value());
+            }
+        }
+        data_vector.push_back(Gear(node.child_value("internal_name"), scaling, gearType, requires, enables, gameplayFlags));
+        scaling.clear();
+        gearType.clear();
+        requires.clear();
+        enables.clear();
+        gameplayFlags.clear();
+    }
+
+    return data_vector;
+}
+
+std::vector<Mutation> loadXML_muts(bool colorless_mode = false, bool no_constraints = false)
+{
+    const std::string xml_path = "data/muts.xml";
+    pugi::xml_document xml_data;
+    std::vector<Mutation> data_vector;
+    pugi::xml_parse_result load_result = xml_data.load_file(xml_path.c_str());
+
+    std::vector<std::vector<std::string>> gameplayFlags;
+    std::vector<std::string> flagsLoader;
+    std::string scaling;
+    scaling = "colorless";
+
+    for (pugi::xml_node node = xml_data.child("mut_list").child("mut"); node; node = node.next_sibling("mut"))
+    {
+        if (!colorless_mode)
+        {
+            scaling = node.child("scaling").child_value();
+        }
+        if (!no_constraints)
+        {
+            for (pugi::xml_node node_child = node.child("requires").child("and"); node_child; node_child = node_child.next_sibling("and"))
+            {
+                for (pugi::xml_node node_child2 = node_child.child("or"); node_child2; node_child2 = node_child2.next_sibling("or"))
+                {
+                    flagsLoader.push_back(node_child2.child_value());
+                }
+                gameplayFlags.push_back(flagsLoader);
+                flagsLoader.clear();
+            }
+        }
+        data_vector.push_back(Mutation(node.child_value("internal_name"), gameplayFlags, scaling));
+        scaling = "colorless";
+        gameplayFlags.clear();
+    }
+
+    return data_vector;
 }
 
 // There's a problem
@@ -219,13 +307,30 @@ std::vector<std::string> loadLocalisations(std::vector<std::string>& dataToLocal
     return localized_data;
 }
 
+Build gear_generator(Build startingBuild)
+{
+    Build resultBuild;
+    std::vector<Gear> gearTable;
+    gearTable = loadXML_gear();
+    return resultBuild;
+}
+
+Build muts_generator(Build startingBuild)
+{
+    Build resultBuild;
+    std::vector<Mutation> mutsTable;
+    mutsTable = loadXML_muts();
+    return resultBuild;
+}
+
 int main() {
     std::unordered_map<std::string, int> bench_results;
     int bc_lvl(0), nb_iter(0);
     bool has_vine(true), has_tp(true), has_ram(true), has_spider(true), has_rotg(true), has_bad_seeds(true), benchmark_mode(false);
     std::string lang = "en", challenge_biomes_enabled, output_file, loc_file;
     std::vector<std::string> diet_chosen, stat_chosen, run_generated;
-    std::vector<std::string> loc_diet, loc_stat, loc_run, loc_benchmark, index_benchmark;
+    std::vector<std::string> loc_diet, loc_stat, loc_run, loc_benchmark, index_benchmark, loc_gear, loc_muts;
+    Build build = Build();
 
     std::unordered_map<std::string, int>::iterator itr;
     std::unordered_map<std::string, Biome>::iterator other_itr;
@@ -274,6 +379,8 @@ int main() {
     {
         diet_chosen = diet_generator();
         stat_chosen = stat_generator();
+        build = gear_generator(build);
+        build = muts_generator(build);
         run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, challenge_biomes_enabled, biomes_collection);
     }
 
@@ -291,6 +398,8 @@ int main() {
         loc_diet = loadLocalisations(diet_chosen, "diets", loc_file);
         loc_stat = loadLocalisations(stat_chosen, "stats", loc_file);
         loc_run = loadLocalisations(run_generated, "biomes", loc_file);
+        loc_gear = loadLocalisations(build.gearToVec(), "items", loc_file);
+        loc_muts = loadLocalisations(build.mutsToVec(), "muts", loc_file);
         for each (std::string d in loc_diet)
         {
             output_stream << "Diet: " << d << std::endl;
@@ -304,6 +413,26 @@ int main() {
         {
             output_stream << b << std::endl;
         }
+    }
+    //while(true) {}
+    return 0;
+}
+
+int main_checkerGearMutsList()
+{
+    std::string const output_file = "list_tests.txt";
+    std::ofstream output_stream(output_file);
+    std::vector<Gear> listGear;
+    std::vector<Mutation> listMuts;
+    listGear = loadXML_gear();
+    listMuts = loadXML_muts();
+    for each (Gear g in listGear)
+    {
+        output_stream << g.gearToString() << std::endl;
+    }
+    for each (Mutation m in listMuts)
+    {
+        output_stream << m.mutToString() << std::endl;
     }
     //while(true) {}
     return 0;
