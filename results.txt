@@ -1,14 +1,20 @@
 Diet: Baguette
-Statistic chosen: Tactics
+Statistic chosen: Brutality
 Run:
 Prisoners' Quarters
 The Dilapidated Arboretum
 Ramparts
 The Concierge
-Stilt Village
-Forgotten Sepulcher
-The Time Keeper
-High Peak Castle
+Slumbering Sanctuary
+Cavern
+The Giant
 The Hand of the King
 Astrolab
 The Collector
+Equipment: Infantry Bow
+Equipment: Ice Shards
+Equipment: Collector's Syringe
+Equipment: Emergency Door
+Mutation: Crow's foot
+Mutation: Gastronomy
+Mutation: Extended Healing

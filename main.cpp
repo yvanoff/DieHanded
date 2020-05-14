@@ -98,7 +98,7 @@ std::vector<Gear> loadXML_gear(bool colorless_mode = false, bool no_constraints 
     pugi::xml_document xml_data;
     std::vector<Gear> data_vector;
     pugi::xml_parse_result load_result = xml_data.load_file(xml_path.c_str());
-    std::vector<std::string> scaling, gearType, requires, enables, gameplayFlags;
+    std::vector<std::string> scaling, gearTypeTmp, requires, enables, gameplayFlags;
 
     for (pugi::xml_node node = xml_data.child("gear_list").child("gear"); node; node = node.next_sibling("gear"))
     {
@@ -113,7 +113,7 @@ std::vector<Gear> loadXML_gear(bool colorless_mode = false, bool no_constraints 
         {
             for (pugi::xml_node node_child = node.child("type"); node_child; node_child = node_child.next_sibling("type"))
             {
-                gearType.push_back(node_child.child_value());
+                gearTypeTmp.push_back(node_child.child_value());
             }
             for (pugi::xml_node node_child = node.child("requires"); node_child; node_child = node_child.next_sibling("requires"))
             {
@@ -128,9 +128,12 @@ std::vector<Gear> loadXML_gear(bool colorless_mode = false, bool no_constraints 
                 gameplayFlags.push_back(node_child.child_value());
             }
         }
-        data_vector.push_back(Gear(node.child_value("internal_name"), scaling, gearType, requires, enables, gameplayFlags));
+        for each (std::string type in gearTypeTmp)
+        {
+            data_vector.push_back(Gear(node.child_value("internal_name"), scaling, type, requires, enables, gameplayFlags));
+        }
         scaling.clear();
-        gearType.clear();
+        gearTypeTmp.clear();
         requires.clear();
         enables.clear();
         gameplayFlags.clear();
@@ -307,20 +310,53 @@ std::vector<std::string> loadLocalisations(std::vector<std::string>& dataToLocal
     return localized_data;
 }
 
-Build gear_generator(Build startingBuild)
+void gear_generator(Build& startingBuild, std::vector<Gear> gearTable)
 {
-    Build resultBuild;
-    std::vector<Gear> gearTable;
-    gearTable = loadXML_gear();
-    return resultBuild;
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::default_random_engine generator;
+    int  nb_gear(0), chosen_gear(0), added_weaps(0), added_skills(0);
+    // Loading the diets and setting the variables to pick one at random
+    nb_gear = gearTable.size();
+    std::uniform_int_distribution<std::mt19937::result_type> rngGear(1, nb_gear);
+    while (added_weaps < 2)
+    {
+        chosen_gear = rngGear(rng)-1;
+        if (startingBuild.isWeaponCompatible(gearTable[chosen_gear]))
+        {
+            startingBuild.addWeapon(gearTable[chosen_gear]);
+            added_weaps++;
+        }
+    }
+    while (added_skills < 2)
+    {
+        chosen_gear = rngGear(rng)-1;
+        if (startingBuild.isSkillCompatible(gearTable[chosen_gear]))
+        {
+            startingBuild.addSkill(gearTable[chosen_gear]);
+            added_skills++;
+        }
+    }
 }
 
-Build muts_generator(Build startingBuild)
+void muts_generator(Build& startingBuild, std::vector<Mutation> mutsTable)
 {
-    Build resultBuild;
-    std::vector<Mutation> mutsTable;
-    mutsTable = loadXML_muts();
-    return resultBuild;
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::default_random_engine generator;
+    int  nb_muts(0), chosen_mut(0), added_muts(0);
+    // Loading the diets and setting the variables to pick one at random
+    nb_muts = mutsTable.size();
+    std::uniform_int_distribution<std::mt19937::result_type> rngMuts(1, nb_muts);
+    while (added_muts < 3)
+    {
+        chosen_mut = rngMuts(rng)-1;
+        if (startingBuild.isMutCompatible(mutsTable[chosen_mut]))
+        {
+            startingBuild.addMut(mutsTable[chosen_mut]);
+            added_muts++;
+        }
+    }
 }
 
 int main() {
@@ -359,6 +395,11 @@ int main() {
     biomes_collection = loadXML_biomes(bc_lvl, has_vine, has_tp, has_ram, has_spider, challenge_biomes_enabled, has_rotg, has_bad_seeds);
     biomes_collection = setup_connections(biomes_collection);
 
+    std::vector<Gear> gearTable;
+    gearTable = loadXML_gear();
+    std::vector<Mutation> mutsTable;
+    mutsTable = loadXML_muts();
+
     if (benchmark_mode)
     {
         for (other_itr = biomes_collection.begin(); other_itr != biomes_collection.end(); other_itr++)
@@ -379,8 +420,8 @@ int main() {
     {
         diet_chosen = diet_generator();
         stat_chosen = stat_generator();
-        build = gear_generator(build);
-        build = muts_generator(build);
+        gear_generator(build, gearTable);
+        muts_generator(build, mutsTable);
         run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, challenge_biomes_enabled, biomes_collection);
     }
 
@@ -412,6 +453,14 @@ int main() {
         for each (std::string b in loc_run)
         {
             output_stream << b << std::endl;
+        }
+        for each (std::string w in loc_gear)
+        {
+            output_stream << "Equipment: " << w << std::endl;
+        }
+        for each (std::string m in loc_muts)
+        {
+            output_stream << "Mutation: " << m << std::endl;
         }
     }
     //while(true) {}

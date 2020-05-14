@@ -1,7 +1,7 @@
 #include <iostream>
 #include "gear.h"
 
-Gear::Gear(std::string name, std::vector<std::string> weaponScaling, std::vector<std::string> initGearType,
+Gear::Gear(std::string name, std::vector<std::string> weaponScaling, std::string initGearType,
     std::vector<std::string> initRequires, std::vector<std::string> initEnables, std::vector<std::string> initFlags)
 {
     internalName = name;
@@ -9,10 +9,7 @@ Gear::Gear(std::string name, std::vector<std::string> weaponScaling, std::vector
 	{
 		scaling.push_back(s);
 	}
-	for each (std::string t in initGearType)
-	{
-		gearType.push_back(t);
-	}
+	gearType = initGearType;
 	for each (std::string r in initRequires)
 	{
 		requires.push_back(r);
@@ -40,10 +37,7 @@ std::string Gear::gearToString()
 	{
 		gearString += (", " + s);
 	}
-	for each (std::string s in gearType)
-	{
-		gearString += (", " + s);
-	}
+	gearString += (", " + gearType);
 	for each (std::string s in requires)
 	{
 		gearString += (", " + s);
@@ -74,14 +68,9 @@ std::vector<std::string> Gear::getScaling()
 	return resReq;
 }
 
-std::vector<std::string> Gear::getType()
+std::string Gear::getType()
 {
-	std::vector<std::string> resReq;
-	for each (std::string type in gearType)
-	{
-		resReq.push_back(type);
-	}
-	return resReq;
+	return gearType;
 }
 
 std::vector<std::string> Gear::getRequired()

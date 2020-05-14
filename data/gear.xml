@@ -758,95 +758,109 @@
 	<gear>
 		<internal_name>planks</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>frontline</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 		<requires>melee</requires>
 	</gear>
 	<gear>
 		<internal_name>cudgel</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 		<enables>stun</enables>
 	</gear>
 	<gear>
 		<internal_name>punishment</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>yeeter</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 		<requires>long</requires>
 	</gear>
 	<gear>
 		<internal_name>opShield</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>assShield</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>thirstyS</internal_name>
 		<scaling>brut</scaling>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 		<enables>bleed</enables>
 	</gear>
 	<gear>
 		<internal_name>greed</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>spikedS</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>buckler</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 	</gear>
 	<gear>
 		<internal_name>forceS</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
-	</gear>
+</gear>
 	<gear>
 		<internal_name>thunder</internal_name>
 		<scaling>tact</scaling>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 		<enables>dot</enables>
-	</gear>
+</gear>
 	<gear>
 		<internal_name>iceShield</internal_name>
 		<scaling>surv</scaling>
-		<type>shield</type>
+		<type>offhand</type>
+		<special>shield</special>
 		<special>crits</special>
 		<enables>ice</enables>
 	</gear>
