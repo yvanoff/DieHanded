@@ -128,7 +128,7 @@ std::vector<Gear> loadXML_gear(bool colorless_mode = false, bool no_constraints 
                 gameplayFlags.push_back(node_child.child_value());
             }
         }
-        for each (std::string type in gearTypeTmp)
+        for (std::string type : gearTypeTmp)
         {
             data_vector.push_back(Gear(node.child_value("internal_name"), scaling, type, requires, enables, gameplayFlags));
         }
@@ -193,7 +193,7 @@ std::unordered_map<std::string, Biome> setup_connections(std::unordered_map<std:
 
     for (itr = final_table.begin(); itr != final_table.end(); itr++)
     {
-        for each (Transition* trans in itr->second.getExits())
+        for (Transition* trans : itr->second.getExits())
         {
             trans->setBiome(final_table.find(trans->getName())->second);
         }
@@ -287,7 +287,7 @@ std::vector<std::string> biome_generator(int bc_lvl, bool has_vine, bool has_tp,
 std::vector<std::string> loadLocalisations(std::vector<std::string>& dataToLocalize, std::string category, std::string& localization_xml)
 {
     std::vector<std::string> localized_data;
-    for each (std::string s in dataToLocalize)
+    for (std::string s : dataToLocalize)
     {
         localized_data.push_back("");
     }
@@ -364,7 +364,7 @@ int main() {
     int bc_lvl(0), nb_iter(0);
     bool has_vine(true), has_tp(true), has_ram(true), has_spider(true), has_rotg(true), has_bad_seeds(true), benchmark_mode(false);
     std::string lang = "en", challenge_biomes_enabled, output_file, loc_file;
-    std::vector<std::string> diet_chosen, stat_chosen, run_generated;
+    std::vector<std::string> diet_chosen, stat_chosen, run_generated, gear_gen, muts_gen;
     std::vector<std::string> loc_diet, loc_stat, loc_run, loc_benchmark, index_benchmark, loc_gear, loc_muts;
     Build build = Build();
 
@@ -410,7 +410,7 @@ int main() {
         for (size_t i = 0; i < nb_iter; i++)
         {
             run_generated = biome_generator(bc_lvl, has_vine, has_tp, has_ram, has_spider, has_rotg, has_bad_seeds, challenge_biomes_enabled, biomes_collection);
-            for each (std::string biome in run_generated)
+            for (std::string biome : run_generated)
             {
                 bench_results[biome]++;
             }
@@ -439,26 +439,28 @@ int main() {
         loc_diet = loadLocalisations(diet_chosen, "diets", loc_file);
         loc_stat = loadLocalisations(stat_chosen, "stats", loc_file);
         loc_run = loadLocalisations(run_generated, "biomes", loc_file);
-        loc_gear = loadLocalisations(build.gearToVec(), "items", loc_file);
-        loc_muts = loadLocalisations(build.mutsToVec(), "muts", loc_file);
-        for each (std::string d in loc_diet)
+        gear_gen = build.gearToVec();
+        muts_gen = build.mutsToVec();
+        loc_gear = loadLocalisations(gear_gen, "items", loc_file);
+        loc_muts = loadLocalisations(muts_gen, "muts", loc_file);
+        for (std::string d : loc_diet)
         {
             output_stream << "Diet: " << d << std::endl;
         }
-        for each (std::string s in loc_stat)
+        for (std::string s : loc_stat)
         {
             output_stream << "Statistic chosen: " << s << std::endl;
         }
         output_stream << "Run:" << std::endl;
-        for each (std::string b in loc_run)
+        for (std::string b : loc_run)
         {
             output_stream << b << std::endl;
         }
-        for each (std::string w in loc_gear)
+        for (std::string w : loc_gear)
         {
             output_stream << "Equipment: " << w << std::endl;
         }
-        for each (std::string m in loc_muts)
+        for (std::string m : loc_muts)
         {
             output_stream << "Mutation: " << m << std::endl;
         }
@@ -475,11 +477,11 @@ int main_checkerGearMutsList()
     std::vector<Mutation> listMuts;
     listGear = loadXML_gear();
     listMuts = loadXML_muts();
-    for each (Gear g in listGear)
+    for (Gear g : listGear)
     {
         output_stream << g.gearToString() << std::endl;
     }
-    for each (Mutation m in listMuts)
+    for (Mutation m : listMuts)
     {
         output_stream << m.mutToString() << std::endl;
     }

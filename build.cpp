@@ -1,4 +1,5 @@
 #include "build.h"
+#include <algorithm>
 
 Build::Build()
 {
@@ -24,15 +25,15 @@ void Build::addWeapon(Gear mainToAdd)
 	std::vector<std::string> weapReq;
 	weapons.push_back(mainToAdd);
 	// update enables/disables/flags
-	for each (std::string flag in mainToAdd.getFlags())
+	for (std::string flag : mainToAdd.getFlags())
 	{
 		otherFlags.push_back(flag);
 	}
-	for each (std::string en in mainToAdd.getEnabled())
+	for (std::string en : mainToAdd.getEnabled())
 	{
 		gameplayEnabled.push_back(en);
 	}
-	for each (std::string req in mainToAdd.getRequired())
+	for (std::string req : mainToAdd.getRequired())
 	{
 		weapReq.push_back(req);
 	}
@@ -46,15 +47,15 @@ void Build::addSkill(Gear skillToAdd)
 	std::vector<std::string> weapReq;
 	skills.push_back(skillToAdd);
 	// update enables/disables/flags
-	for each (std::string flag in skillToAdd.getFlags())
+	for (std::string flag : skillToAdd.getFlags())
 	{
 		otherFlags.push_back(flag);
 	}
-	for each (std::string en in skillToAdd.getEnabled())
+	for (std::string en : skillToAdd.getEnabled())
 	{
 		gameplayEnabled.push_back(en);
 	}
-	for each (std::string req in skillToAdd.getRequired())
+	for (std::string req : skillToAdd.getRequired())
 	{
 		weapReq.push_back(req);
 	}
@@ -67,7 +68,7 @@ void Build::addMut(Mutation mutToAdd)
 	std::vector<std::string> mutReq;
 	mutList.push_back(mutToAdd);
 	// updates flags
-	for each (std::vector<std::string> req in mutToAdd.getGameplay())
+	for (std::vector<std::string> req : mutToAdd.getGameplay())
 	{
 		gameplayRequired.push_back(req);
 	}
@@ -80,7 +81,7 @@ bool Build::isWeaponCompatible(Gear gearToTest)
 	std::vector<std::string> weapScales;
 	weapScales = gearToTest.getScaling();
 	resTest = false;
-	has_scaling = std::find(weapScales.begin(), weapScales.end(), mainStat) != weapScales.end();
+	has_scaling = find(weapScales.begin(), weapScales.end(), mainStat) != weapScales.end();
 	// differentiating between a weapon and a skill
 	if (weapons.size() < maxWeapons)
 	{
@@ -143,11 +144,11 @@ bool Build::isMutCompatible(Mutation mutToTest)
 std::vector<std::string> Build::gearToVec()
 {
 	std::vector<std::string> vecGear;
-	for each (Gear mainW in weapons)
+	for (Gear mainW : weapons)
 	{
 		vecGear.push_back(mainW.getName());
 	}
-	for each (Gear skill in skills)
+	for (Gear skill : skills)
 	{
 		vecGear.push_back(skill.getName());
 	}
@@ -157,7 +158,7 @@ std::vector<std::string> Build::gearToVec()
 std::vector<std::string> Build::mutsToVec()
 {
 	std::vector<std::string> vecMuts;
-	for each (Mutation m in mutList)
+	for (Mutation m : mutList)
 	{
 		vecMuts.push_back(m.getName());
 	}
@@ -168,9 +169,9 @@ void Build::clearFlags()
 {
 	std::vector<std::string>::iterator finder;
 	int position=0;
-	for each (std::string flagEn in gameplayEnabled)
+	for (std::string flagEn : gameplayEnabled)
 	{
-		for each (std::vector<std::string> flagsReqOr in gameplayRequired)
+		for (std::vector<std::string> flagsReqOr : gameplayRequired)
 		{
 			position++;
 			finder = std::find(flagsReqOr.begin(), flagsReqOr.end(), flagEn);

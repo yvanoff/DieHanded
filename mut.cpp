@@ -4,7 +4,7 @@
 Mutation::Mutation(std::string name, std::vector<std::vector<std::string>> gameplayMod)
 {
 	internalName = name;
-	for each (std::vector<std::string> flag in gameplayMod)
+	for (std::vector<std::string> flag : gameplayMod)
 	{
 		requiredGameplay.push_back(flag);
 	}
@@ -14,7 +14,7 @@ Mutation::Mutation(std::string name, std::vector<std::vector<std::string>> gamep
 Mutation::Mutation(std::string name, std::vector<std::vector<std::string>> gameplayMod, std::string mutScales)
 {
 	internalName = name;
-	for each (std::vector<std::string> flag in gameplayMod)
+	for (std::vector<std::string> flag : gameplayMod)
 	{
 		requiredGameplay.push_back(flag);
 	}
@@ -31,10 +31,10 @@ std::string Mutation::mutToString()
 	std::string mutString;
 	mutString = internalName;
 	mutString += (", " + scaling);
-	for each (std::vector<std::string> flag in requiredGameplay)
+	for (std::vector<std::string> flag : requiredGameplay)
 	{
 		mutString += " and: ";
-		for each (std::string f in flag)
+		for (std::string f : flag)
 		{
 			mutString += (" | " + f);
 		}
@@ -57,9 +57,9 @@ std::vector<std::vector<std::string>> Mutation::getGameplay()
 {
 	std::vector<std::vector<std::string>> resReq;
 	std::vector<std::string> tmpStore;
-	for each (std::vector<std::string> condition in requiredGameplay)
+	for (std::vector<std::string> condition : requiredGameplay)
 	{
-		for each (std::string modifier in condition)
+		for (std::string modifier : condition)
 		{
 			tmpStore.push_back(modifier);
 		}

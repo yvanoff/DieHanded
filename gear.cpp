@@ -5,20 +5,20 @@ Gear::Gear(std::string name, std::vector<std::string> weaponScaling, std::string
     std::vector<std::string> initRequires, std::vector<std::string> initEnables, std::vector<std::string> initFlags)
 {
     internalName = name;
-	for each (std::string s in weaponScaling)
+	for (std::string s : weaponScaling)
 	{
 		scaling.push_back(s);
 	}
 	gearType = initGearType;
-	for each (std::string r in initRequires)
+	for (std::string r : initRequires)
 	{
 		requires.push_back(r);
 	}
-	for each (std::string e in initEnables)
+	for (std::string e : initEnables)
 	{
 		enables.push_back(e);
 	}
-	for each (std::string f in initFlags)
+	for (std::string f : initFlags)
 	{
 		gameplayFlags.push_back(f);
 	}
@@ -33,20 +33,20 @@ std::string Gear::gearToString()
 {
 	std::string gearString;
 	gearString = internalName;
-	for each (std::string s in scaling)
+	for (std::string s : scaling)
 	{
 		gearString += (", " + s);
 	}
 	gearString += (", " + gearType);
-	for each (std::string s in requires)
+	for (std::string s : requires)
 	{
 		gearString += (", " + s);
 	}
-	for each (std::string s in enables)
+	for (std::string s : enables)
 	{
 		gearString += (", " + s);
 	}
-	for each (std::string s in gameplayFlags)
+	for (std::string s : gameplayFlags)
 	{
 		gearString += (", " + s);
 	}
@@ -61,7 +61,7 @@ std::string Gear::getName()
 std::vector<std::string> Gear::getScaling()
 {
 	std::vector<std::string> resReq;
-	for each (std::string stat in scaling)
+	for (std::string stat : scaling)
 	{
 		resReq.push_back(stat);
 	}
@@ -76,7 +76,7 @@ std::string Gear::getType()
 std::vector<std::string> Gear::getRequired()
 {
 	std::vector<std::string> resReq;
-	for each (std::string req in requires)
+	for (std::string req : requires)
 	{
 		resReq.push_back(req);
 	}
@@ -86,7 +86,7 @@ std::vector<std::string> Gear::getRequired()
 std::vector<std::string> Gear::getEnabled()
 {
 	std::vector<std::string> resReq;
-	for each (std::string en in enables)
+	for (std::string en : enables)
 	{
 		resReq.push_back(en);
 	}
@@ -96,7 +96,7 @@ std::vector<std::string> Gear::getEnabled()
 std::vector<std::string> Gear::getFlags()
 {
 	std::vector<std::string> resReq;
-	for each (std::string flag in gameplayFlags)
+	for (std::string flag : gameplayFlags)
 	{
 		resReq.push_back(flag);
 	}

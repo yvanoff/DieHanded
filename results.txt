@@ -1,20 +1,20 @@
-Diet: Baguette
+Diet: Castlevaniesque
 Statistic chosen: Brutality
 Run:
 Prisoners' Quarters
 The Dilapidated Arboretum
-Ramparts
-The Concierge
-Slumbering Sanctuary
-Cavern
+The Morass of the Banished
+Mama Tick
+Stilt Village
+Forgotten Sepulcher
 The Giant
 The Hand of the King
 Astrolab
 The Collector
-Equipment: Infantry Bow
-Equipment: Ice Shards
-Equipment: Collector's Syringe
-Equipment: Emergency Door
-Mutation: Crow's foot
-Mutation: Gastronomy
-Mutation: Extended Healing
+Equipment: Broadsword
+Equipment: Front Line Shield
+Equipment: Sinew Slicer
+Equipment: Cluster Grenade
+Mutation: Ygdar Orus Li Ox!
+Mutation: Alienation
+Mutation: Tranquility
