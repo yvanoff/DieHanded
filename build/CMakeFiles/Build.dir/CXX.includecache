@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yvanoff/DieHanded/build.cpp
+build.h
+/home/yvanoff/DieHanded/build.h
+algorithm
+-
+
+/home/yvanoff/DieHanded/build.h
+iostream
+-
+vector
+-
+gear.h
+/home/yvanoff/DieHanded/gear.h
+mut.h
+/home/yvanoff/DieHanded/mut.h
+
+/home/yvanoff/DieHanded/gear.h
+iostream
+-
+vector
+-
+
+/home/yvanoff/DieHanded/mut.h
+iostream
+-
+vector
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBasicData.a  CMakeFiles/BasicData.dir/basicData.cpp.o
+/usr/bin/ranlib libBasicData.a

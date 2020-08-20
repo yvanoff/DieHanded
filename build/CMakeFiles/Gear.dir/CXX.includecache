@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yvanoff/DieHanded/gear.cpp
+iostream
+-
+gear.h
+/home/yvanoff/DieHanded/gear.h
+
+/home/yvanoff/DieHanded/gear.h
+iostream
+-
+vector
+-
+

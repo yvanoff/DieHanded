@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yvanoff/DieHanded/basicData.cpp
+basicData.h
+/home/yvanoff/DieHanded/basicData.h
+
+/home/yvanoff/DieHanded/basicData.h
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+

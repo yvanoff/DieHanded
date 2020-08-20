@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMuts.a  CMakeFiles/Muts.dir/mut.cpp.o
+/usr/bin/ranlib libMuts.a

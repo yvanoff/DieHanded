@@ -1,0 +1,2 @@
+/usr/bin/ar qc libXML.a  CMakeFiles/XML.dir/pugixml.cpp.o
+/usr/bin/ranlib libXML.a

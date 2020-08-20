@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/DieHanded.dir/main.cpp.o  -o DieHanded  libBasicData.a libBiomes.a libBuild.a libGear.a libMuts.a libXML.a 
