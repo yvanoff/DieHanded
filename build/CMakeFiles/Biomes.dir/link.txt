@@ -1,2 +1,0 @@
-/usr/bin/ar qc libBiomes.a  CMakeFiles/Biomes.dir/biomes.cpp.o
-/usr/bin/ranlib libBiomes.a

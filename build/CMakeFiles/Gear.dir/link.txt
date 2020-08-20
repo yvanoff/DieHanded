@@ -1,2 +1,0 @@
-/usr/bin/ar qc libGear.a  CMakeFiles/Gear.dir/gear.cpp.o
-/usr/bin/ranlib libGear.a
